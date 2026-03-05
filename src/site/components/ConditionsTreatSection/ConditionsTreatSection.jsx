@@ -11,7 +11,7 @@ const ConditionsTreatSection = ({ data }) => {
                     <div className="col-xl-4 col-md-6 col-sm-6" key={index}>
                         <div className="technology-card gap-3" key={index}>
                             <div className="icon" style={{ height: "51px" }}>
-                                <img src={condition.icon.src} className='h-100' alt={condition.title} srcset={condition.icon.src} />
+                                <img src={condition.icon.src} className='h-100' alt={condition.title} />
                             </div>
                             <h4 className='mb-0'>{condition.title}</h4>
                         </div>

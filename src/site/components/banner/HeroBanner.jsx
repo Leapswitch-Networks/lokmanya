@@ -7,6 +7,8 @@ import 'swiper/css/pagination';
 import Link from 'next/link';
 
 const HeroBanner = ({ slides = [] }) => {
+    const shouldLoop = slides.length > 1;
+
     return (
         <section className="banner">
             <Swiper
@@ -15,7 +17,7 @@ const HeroBanner = ({ slides = [] }) => {
                 keyboard={{ enabled: true }}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 7000, disableOnInteraction: false }}
-                loop={true}
+                loop={shouldLoop}
                 navigation={true}
                 modules={[Autoplay, Keyboard, Pagination, Navigation]}
                 className="main-slider"

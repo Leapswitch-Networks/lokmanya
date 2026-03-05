@@ -99,7 +99,7 @@ const Conditions = () => {
       <div className="technologies-grid">
         {technologies.map((tech, index) => (
           <div className="technology-card" key={index}>
-            <div className="icon"><img src={tech.icon} alt={tech.icon} srcset={tech.icon} /> </div>
+            <div className="icon"><img src={tech.icon} alt={tech.title} /></div>
             <h3 >{tech.title}</h3>
             {/* <p className='tech-desc'>{tech.description}</p> */}
           </div>
