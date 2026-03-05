@@ -1,0 +1,190 @@
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 690px;
+    margin: auto;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed #aaa;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.circle.inner {
+    width: 485px;
+    height: 485px;
+    animation: rotateClockwise 20s linear infinite;
+}
+
+.circle.outer {
+    width: 650px;
+    height: 650px;
+    animation: rotateAntiClockwise 30s linear infinite;
+}
+
+.icon {
+    position: absolute;
+    cursor: pointer;
+    pointer-events: auto;
+    margin: 0;
+    z-index: 10;
+}
+
+.circle.inner .icon:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle.inner .icon:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.circle.inner .icon:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.circle.inner .icon:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.circle.outer .icon:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle.outer .icon:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.circle.outer .icon:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.circle.outer .icon:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotateClockwise {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateAntiClockwise {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.circle-container:hover .circle {
+    animation-play-state: paused;
+}
+
+/* Default: info-card on right side */
+.info-card {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    right: auto;
+    transform: translateY(-50%) translateX(25px) rotate(0deg);
+    transform-origin: left center;
+    width: 240px;
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0.75rem;
+    pointer-events: none;
+}
+
+/* Info-card on left side */
+.icon[data-side="left"] .info-card {
+    left: auto;
+    right: 100%;
+    transform: translateY(-50%) translateX(-25px) rotate(0deg);
+    transform-origin: right center;
+}
+
+/* Info card visibility on hover */
+.icon:hover .info-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e5f7fc;
+    color: #007baf;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.info-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-content p {
+    font-size: 13px;
+    margin: 0;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.info-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+    overflow: hidden;
+}

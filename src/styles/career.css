@@ -1,0 +1,379 @@
+/* .carrer-banner .banner-left-sec {
+    align-items: center;
+    padding-block: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+} */
+
+.career-banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    gap: 10px;
+}
+
+.search-form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    height: 40px;
+    padding-inline: 10px;
+}
+
+/* our-values */
+.our-values-card {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 4px 8px 0px #1A1A1A40;
+}
+
+.our-values-card img {
+    height: 200px;
+    width: 100%;
+}
+
+.our-values-card p {
+    margin-bottom: 0;
+}
+
+.our-values-card .card-title {
+    text-transform: capitalize;
+    margin-bottom: 10px !important;
+}
+
+.ov-card-body {
+    padding: 15px;
+}
+
+.life-at-lk-img {
+    height: 220px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.positions-table thead th {
+    background-color: transparent;
+}
+
+.positions-table {
+    position: relative;
+}
+
+.positions-table::before,
+.positions-table::after {
+    position: absolute;
+    content: '';
+    height: 70px;
+    width: 70px;
+    background-size: contain !important;
+    z-index: -1;
+
+}
+
+.positions-table::before {
+    background: url(../site/assets//images/icons/file-search.svg) no-repeat;
+    bottom: -67 px;
+    left: 0;
+
+}
+
+.positions-table::after {
+    background: url(../site/assets//images/icons/job-offer.svg) no-repeat;
+    top: -40px;
+    right: 5px;
+
+}
+
+.positions-table thead th {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.positions-table :is(th, td) {
+    border: none;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* .positions-table.table-striped > tbody > tr:nth-of-type(odd) > *{
+    background-color: #EBF4FF ;
+} */
+.positions-table :is(th, td):not(:first-child) {
+    text-align: center;
+}
+
+.positions-table tbody tr:nth-child(odd) {
+    border-radius: 10px;
+}
+
+.positions-table tbody tr:nth-child(odd) * {
+    background-color: --color-cyan-blue;
+}
+
+.positions-table tbody tr:nth-child(odd) td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.positions-table tbody tr:nth-child(odd) td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-apply {
+    font-weight: 500;
+    background-image: var(--color-gradient);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.btn-apply svg {
+    rotate: 45deg;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+.chairman-message {
+    margin-bottom: 60px;
+}
+
+.chairman-message-inner {
+    background: #E5E7FF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.chairman-message-inner::before {
+    position: absolute;
+    content: "";
+    background: url(../site/assets/images/common-bg.webp) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    opacity: .05;
+    top: 0;
+    left: 0;
+}
+
+.chairman-message-row {
+    align-items: center;
+    padding-inline: 30px;
+}
+
+.chairman-message-row img.chairman-img {
+    position: relative;
+    height: 350px;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+}
+
+.chairman-message-row>div:first-child {
+    padding-block: 30px;
+}
+
+.chairman-message-row>div:last-child {
+    align-self: flex-end;
+}
+
+.emp-speak {
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+}
+
+.emp-speak-card {
+    background: #fff;
+    padding: 20px;
+    padding-right: 40px;
+    box-shadow: 0px 4px 8px 0px #24242429;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.emp-speak .swiper-slide-next .emp-speak-card {
+    margin-right: 50px;
+}
+
+.emp-speak-card .quote-mark {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}
+
+.emp-speak-card .auther-name {
+    margin-bottom: 2px;
+}
+
+.emp-speak-card .auther-img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 10px 0px 10px -5px #24242429;
+    margin-right: -80px;
+}
+
+.emp-speak .swiper-pagination {
+    background-color: var(--color-primary-light-new);
+}
+
+/* .emp-speak .swiper-pagination-bullet-active {
+    background: var(--color-primary-sky-new) !important;
+} */
+
+/* modal */
+
+#coverLetter {
+    border-radius: 20px;
+}
+
+#resume {
+    border-radius: 20px;
+
+}
+
+
+@media screen and (max-width:767px) {
+    .ov-card-body {
+        padding: 10px;
+    }
+
+    .our-values-card .card-title {
+        margin-bottom: 5px !important;
+    }
+
+    .life-at-lk-img {
+        height: 170px;
+    }
+
+    .positions-table::before,
+    .positions-table::after {
+        display: none;
+    }
+
+    .positions-table {
+        white-space: nowrap;
+    }
+
+    .table-outer {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .positions-table :is(th, td) {
+        height: 30px;
+        padding: 5px 15px;
+    }
+
+    .table-outer::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .chairman-message {
+        margin-bottom: 30px;
+    }
+
+    .chairman-message-row>div:last-child {
+        align-self: center;
+    }
+
+    .chairman-message-row img.chairman-img {
+        margin: auto;
+        height: 240px;
+    }
+
+    .chairman-message-inner {
+        text-align: center;
+    }
+
+    .emp-speak .swiper-slide-active .emp-speak-card {
+        margin-right: 40px;
+    }
+
+    .emp-speak-card .auther-img {
+        height: 80px;
+        width: 80px;
+        margin-right: -70px;
+    }
+
+    .slider-btn-prev,
+    .slider-btn-next {
+        padding: 3px 6px;
+        padding-top: 1px;
+    }
+
+    .slider-btn-prev {
+        left: -5px;
+    }
+
+    .slider-btn-next {
+        right: -5px;
+    }
+
+    .slider-btn-prev img,
+    .slider-btn-next img {
+        width: 13px;
+    }
+
+    .slider-btn-prev,
+    .slider-btn-next {
+        top: calc(50% - 10px);
+    }
+
+    .common-slider-parent .swiper-pagination {
+        margin-top: 10px;
+    }
+
+    .career-banner-left {
+        text-align: center;
+        gap: 5px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .positions-table {
+        margin-bottom: 10px;
+    }
+
+    /* .carrer-banner .banner-left-sec {
+        padding-left: 15px;
+        padding-right: 50px;
+    } */
+}
+
+@media screen and (max-width:550px) {
+    .life-at-lk-img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .our-values .col-6 {
+        width: 100%;
+    }
+
+    .our-values .our-values-card img {
+        height: 150px;
+    }
+}

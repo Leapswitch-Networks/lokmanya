@@ -1,0 +1,62 @@
+
+.master-module-container {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    gap: 20px;
+}
+.master-module-container .resource-body {
+    padding-right: 10px;
+}
+.master-module-container .edit-prof-header {
+    height: calc(100vh - 70px);
+    /* margin-top: 20px; */
+}
+.edit-prof-header {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    background: #0494cd26;
+}
+.tab-nav {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    width: 100%;   
+}
+.menu-tab {
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    /* padding: 0 12px; */
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: #000;
+    /* width: 100%; */
+}
+.tab-nav a {
+    /* background-color: var(--bg-gray); */
+    /* border-radius: 25px; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+    padding-left: 15px;
+}
+.tab-nav a.active, .tab-nav a:hover {
+    background-color: #0094cd !important;
+    color: #fff;
+}
+.tab-nav a.active .menu-tab, .tab-nav a:hover  .menu-tab{
+    color: #fff;
+    /* width: 100%; */
+}
+.master-module-container .resource-header {
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}

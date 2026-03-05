@@ -1,0 +1,36 @@
+import * as React from "react";
+const DeleteIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={ props.width || 512}
+    height={ props.height || 512}
+    x={0}
+    y={0}
+    viewBox="0 0 24 24"
+    style={{
+      enableBackground: "new 0 0 512 512",
+    }}
+    xmlSpace="preserve"
+    className=""
+    {...props}
+  >
+    <g>
+      <path
+        d="M21 4h-3.1A5.009 5.009 0 0 0 13 0h-2a5.009 5.009 0 0 0-4.9 4H3a1 1 0 0 0 0 2h1v13a5.006 5.006 0 0 0 5 5h6a5.006 5.006 0 0 0 5-5V6h1a1 1 0 0 0 0-2ZM11 2h2a3.006 3.006 0 0 1 2.829 2H8.171A3.006 3.006 0 0 1 11 2Zm7 17a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V6h12Z"
+        fill={props.color||'#898989'}
+        opacity={1}
+        data-original="#000000"
+        className=""
+      />
+      <path
+        d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM14 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"
+        fill={props.color||'#898989'}
+        opacity={1}
+        data-original="#000000"
+        className=""
+      />
+    </g>
+  </svg>
+);
+export default DeleteIcon;

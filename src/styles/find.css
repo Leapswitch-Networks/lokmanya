@@ -1,0 +1,152 @@
+.find-enquiryForm {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background: rgb(255 255 255);
+    border-radius: 10px;
+
+}
+
+.docHeading .find-enquiryForm {
+    padding: 10px 0px 10px 0px;
+
+}
+
+.findDoctor {
+    width: 100%;
+}
+
+/* doctor card */
+
+.docHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.docHeading select {
+    border-radius: 5px;
+    background: linear-gradient(#fff, #fff) padding-box, var(--color-gradient-hover) border-box;
+    border: 1px solid transparent;
+    width: auto;
+}
+
+.docHeading input {
+    width: 100%;
+    border-radius: 5px;
+
+    height: 40px;
+    padding-inline: 10px;
+    background: linear-gradient(#fff, #fff) padding-box, var(--color-gradient-hover) border-box;
+
+    border: 1px solid transparent;
+}
+
+.docCard-inner {
+    display: flex;
+    gap: 12px;
+}
+
+.docImg img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    object-position: top;
+}
+
+.docCard {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #1a1a1a40;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    gap: 15px;
+}
+
+.docCard-inner .innerContent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 7px;
+}
+
+.docCard .docCard-inner p {
+    margin-bottom: 10px;
+}
+
+/* .docCard .btnDiv {
+    padding-top: 21px;
+} */
+
+.docCard .button-primary {
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: linear-gradient(#fff, #fff) padding-box, var(--color-gradient-hover) border-box;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.docCard .button-primary span {
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid;
+    /* background: -webkit-linear-gradient(100deg, #F6811F 0%, #4C586B 51.11%, #134A85); */
+    background: var(--color-gradient-hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+.docCard .button-primary:hover {
+    height: 40px;
+    width: 100%;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: var(--color-gradient);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    text-decoration: none;
+
+}
+
+.docCard .button-primary:hover span {
+    background-color: transparent;
+    opacity: 1;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+
+    .find-enquiryForm {
+        flex-direction: column;
+        width: 92%;
+    }
+
+    .docHeading .find-enquiryForm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .docHeading select {
+        width: 100%;
+    }
+}

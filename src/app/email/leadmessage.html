@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Lead Created</title>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: left;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h5>Hello Team, Please check the new enquiry:  </h5>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Value</th>
+            </tr>
+            
+            <tr>
+                <td>Patient Name</td>
+                <td><b>{{patientName}}</b></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><b>{{mobileNumber}}</b></td>
+            </tr>
+            <tr>
+                <td>Inquiry Type</td>
+                <td><b>{{type}}</b></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><b>{{message}}</b></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        // Get the message content
+        var messageContent = document.getElementById("messageContent").innerHTML;
+
+        // Check if the message content is defined and non-empty
+        if (messageContent != 'null' || messageContent.trim() === "") {
+            // Hide the message row if it is empty or undefined
+            document.getElementById("messageRow").style.display = "none";
+        }
+    </script>
+</body>
+</html>

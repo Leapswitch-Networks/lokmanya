@@ -1,0 +1,87 @@
+.col-count-3 {
+  column-count: 3;
+}
+
+.testimonial-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonials .common-card {
+  height: auto !important;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonials .common-card:nth-child(8n+1),
+.testimonials .common-card:nth-child(8n+7) {
+  background-color: #FFEDE7;
+  /* 1st and 2nd in row (across) */
+}
+
+.testimonials .common-card:nth-child(8n+5),
+.testimonials .common-card:nth-child(8n+2) {
+  background-color: #E0FEDF;
+  /* 3rd and 4th in row */
+}
+
+.testimonials .common-card:nth-child(8n+3),
+.testimonials .common-card:nth-child(8n+8) {
+  background-color: #FFFAE5;
+  /* 5th and 6th in row */
+}
+
+.testimonials .common-card:nth-child(8n+4),
+.testimonials .common-card:nth-child(8n+6) {
+  background-color: #E5E7FF;
+  /* 7th and 8th in row */
+}
+
+.testimonials .common-card:nth-child(odd) {
+  background: var(--color-cyan-blue) !important;
+}
+
+.testimonials .common-card:nth-child(odd) p {
+  color: #343434 !important;
+}
+
+.testimonials .common-card:nth-child(even) .testim-ico svg path {
+  fill: #fff;
+}
+
+.testimonials .common-card:nth-child(even) {
+  background: var(--dark-blue-gradient);
+  color: #fff;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .col-count-3 {
+    column-count: 2;
+  }
+
+  .testimonials .common-card:nth-child(4n+1) {
+    background-color: #FFEDE7;
+    /* 1st, 5th, 9th... */
+  }
+
+  .testimonials .common-card:nth-child(4n+2) {
+    background-color: #E0FEDF;
+    /* 2nd, 6th, 10th... */
+  }
+
+  .testimonials .common-card:nth-child(4n+3) {
+    background-color: #FFFAE5;
+    /* 3rd, 7th, 11th... */
+  }
+
+  .testimonials .common-card:nth-child(4n+4) {
+    background-color: #E5E7FF;
+    /* 4th, 8th, 12th... */
+  }
+
+
+}

@@ -1,0 +1,337 @@
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.icon-circle.green {
+    border-color: green;
+    color: green;
+}
+
+.icon-circle.red {
+    border-color: red;
+    color: red;
+}
+
+.bnft-table {
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+.bnft-table thead {
+    background: var(--dark-blue-gradient);
+}
+
+.bnft-tbl-ttl th {
+    background: transparent;
+    color: #fff;
+}
+
+.bnft-tbl-ttl th:first-child {
+    padding-left: 35px;
+    border-top-left-radius: 15px;
+}
+
+.bnft-tbl-ttl th:last-child {
+    padding-right: 35px;
+    border-top-right-radius: 15px;
+}
+
+.bnft-body-td:first-child {
+    /* padding-left: 35px; */
+    border-bottom-left-radius: 15px;
+}
+
+td.bnft-body-td {
+    padding-left: 33px;
+}
+
+.bnft-body-td:last-child {
+    border-bottom-right-radius: 15px;
+    padding-right: 35px;
+}
+
+.bnft-body-td {
+    border-color: #24242433;
+    padding-block: 10px !important;
+}
+
+.bnft-body-row:last-child .bnft-body-td {
+    border-bottom: 0;
+}
+
+/* Exp Exceptional starts */
+/* ----------------------------------------------------------------- */
+.exp-exc-section {
+    background: var(--color-cyan-blue);
+    position: relative;
+}
+
+.exp-exc-mid {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    padding: 35px;
+    margin-top: 30px;
+}
+
+.exp-exc-mid .exp-exc-mid-main {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.exp-exc-mid::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* z-index: -1; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+    border: 1px dashed #210F28;
+}
+
+.svg-circle {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.top-left-one-exp {
+    top: 15px;
+    left: 45px;
+}
+
+.top-right-one-exp {
+    top: 15px;
+    right: 45px;
+}
+
+.top-left-two-exp {
+    top: 150px;
+    left: -25px;
+}
+
+.top-right-two-exp {
+    top: 150px;
+    right: -25px;
+}
+
+.top-left-three-exp {
+    top: 300px;
+    left: 15px;
+}
+
+.top-right-three-exp {
+    top: 300px;
+    right: 15px;
+}
+
+.exp-exc-left-ctnt {
+    text-align: right;
+}
+
+.exp-exc-left-one-ctnt {
+    transform: translate(35px, 5px);
+}
+
+.exp-exc-left-two-ctnt {
+    transform: translate(-25px, 5px);
+}
+
+.exp-exc-left-three-ctnt {
+    transform: translate(5px, 15px);
+}
+
+.exp-exc-right-ctnt {
+    text-align: left;
+}
+
+.exp-exc-right-one-ctnt {
+    transform: translate(-35px, 5px);
+}
+
+.exp-exc-right-two-ctnt {
+    transform: translate(25px, 5px);
+}
+
+.exp-exc-right-three-ctnt {
+    transform: translate(-5px, 15px);
+}
+
+.exp-exc-mobile-img {
+    width: 500px;
+    height: 345px;
+    margin-inline: auto;
+}
+
+.exp-exc-mobile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.exp-exc-mobile-svg {
+    width: 40px;
+    height: 40px;
+}
+
+.doc-spc-team-card {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+}
+
+.doc-spc-team-card:hover {
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    transition: all 0.3s ease-in-out;
+}
+
+.doc-spc-team-img {
+    height: 245px;
+}
+
+.doc-spc-team-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.doc-spc-team-ctnt .doc-specialization {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+}
+
+/* ----------------------------------------------------------------- */
+/* Exp Exceptional ends */
+
+/* Best Treatment Page starts */
+.best-treatment-intro {
+    background: var(--color-cyan-blue);
+    border-radius: 15px;
+    padding-inline: 50px;
+    position: relative;
+    ;
+}
+
+.best-treatment-intro-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.best-treatment-intro-ctnt {
+    padding-block: 45px;
+}
+
+.best-treatment-intro-img {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Best Treatment Page ends */
+
+.hosp-ovw-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+
+    .exp-exc-left-one-ctnt {
+        transform: translate(-5px, 5px);
+    }
+
+    .exp-exc-left-two-ctnt {
+        transform: translate(-55px, 5px);
+    }
+
+    .exp-exc-left-three-ctnt {
+        transform: translate(-25px, 15px);
+    }
+
+
+    .exp-exc-right-one-ctnt {
+        transform: translate(-5px, 5px);
+    }
+
+    .exp-exc-right-two-ctnt {
+        transform: translate(55px, 5px);
+    }
+
+    .exp-exc-right-three-ctnt {
+        transform: translate(25px, 15px);
+    }
+
+    .exp-exc-mid {
+        width: 372px;
+        height: 372px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .bnft-tbl-ttl th:first-child,
+    .bnft-body-td:first-child {
+        padding-left: 15px;
+    }
+
+    .bnft-tbl-ttl th:last-child,
+    .bnft-body-td:last-child {
+        padding-right: 15px;
+    }
+
+    .exp-exc-mobile-img {
+        width: 100%;
+        height: 345px;
+    }
+
+    .doc-spc-team-img {
+        height: 130px;
+    }
+
+    .best-treatment-intro {
+        padding-inline: 15px;
+    }
+
+    .best-treatment-intro-ctnt {
+        padding-block: 30px;
+    }
+
+    td.bnft-body-td {
+        padding-left: 28px;
+    }
+
+    .hosp-ovw-img {
+        width: 425px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .hosp-ovw-img {
+        width: 100%;
+    }
+}

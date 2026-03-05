@@ -1,0 +1,93 @@
+.custom-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+    padding: 20px;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.form-check,
+.form-input_field {
+    padding-left: 30px;
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-input_field {
+    padding: 10px 20px;
+    margin: auto;
+    width: 390px;
+    text-align: center;
+}
+
+.addemp-wrapper .form-check-label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width: 140px;
+    text-align: left;
+}
+
+.addemp-wrapper .form-check:has(> .form-check-input:checked) {
+    border: 1px solid #a71d30;
+}
+
+.addemp-wrapper .form-check-input {
+    margin-top: 1px;
+    border-color: #a71c31;
+    border-width: 2px;
+}
+
+.addemp-wrapper .form-check-input:checked {
+    background-color: #a71d30;
+    border-color: #a71d30;
+    background-image: none;
+}
+
+.custom-d-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.addemp-wrapper .form-check-input:focus {
+    border-color: #a71d30;
+    box-shadow: none;
+}
+
+#its_number_wrapper .float-right {
+    float: right;
+}
+
+#its_number_wrapper .float-left {
+    float: left;
+}
+
+#its_number_wrapper label {
+    text-align: left;
+    display: block;
+    margin-bottom: 4px;
+    padding-left: 20px;
+}
+
+#its_number_wrapper .form-input_field {
+    text-align: left;
+}
+
+#its_number_wrapper .mobile_no {
+    width: 390px;
+    margin: auto;
+}

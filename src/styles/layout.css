@@ -1,0 +1,141 @@
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-rows: 60px 1fr;
+}
+.sidebar-container {
+  height: 100vh;
+  width: 100%;
+}
+.content-cotainer {
+  gap: 0px;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  background: #f8f8f8;
+}
+.container-listing {
+  border-radius: var(--radius) 0 0 0;
+  padding: 20px 0;
+  height: calc(100% - 20px);
+  margin-top: 20px;
+}
+.main-header {
+  height: 100%;
+}
+.main-content {
+  height: 100%;
+}
+.sidebar-wrapper {
+  width: 170px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: calc(100vh - 60px);
+  color: #fff;
+  padding-bottom: 15px;
+  background: #2E5386;
+}
+
+.sidebar {
+  overflow: hidden;
+  overflow-y: auto;
+  min-height: 200px;
+  width: 100%;
+}
+.sidebar-footer {
+  width: 100%;
+  padding: 0 20px 0 25px;
+  text-align: center;
+}
+.sidebar-footer .primary-button {
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+}
+.sidebar-footer .primary-button:hover {
+  background-color: transparent !important;
+  
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.sidebar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.sidebar-menu li * {
+  color: #ffffff;
+  fill: #ffffff;
+  font-weight: 400;
+}
+.sidebar-menu li a {
+  overflow: hidden;
+}
+.sidebar-menu li a:hover,
+.sidebar-menu li a:hover *,
+.sidebar-menu li .menu_active,
+.sidebar-menu li .menu_active * {
+  background-color: #fff;
+  color: var(--color-primary);
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+.sidebar-menu * {
+  color: var(--text-gray-color);
+  font-weight: 700;
+}
+.sidebar-icon {
+  height: 15px;
+  width: 15px;
+}
+.ps-menu-icon {
+  margin-right: 0 !important;
+}
+.ps-menu-button {
+  height: 40px !important;
+}
+
+/* logout popup  */
+.swal2-confirm,
+.swal2-cancel {
+  width: 100px;
+  border-radius: 50px !important;
+}
+.swal2-confirm {
+  border: 1px solid transparent !important;
+}
+.swal2-confirm:hover {
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  background: none !important;
+}
+.swal2-cancel {
+  color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+.swal2-cancel:focus {
+  box-shadow: none !important;
+}
+.swal2-cancel:hover {
+  border-color: transparent !important;
+  color: #fff !important;
+  background: var(--color-primary) !important;
+}
+.change-password{
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.change-password:hover{
+  color: var(--color-primary);
+}
+.prof-container{
+  position: relative;
+}
+.change-pasword-modal .input-wrapper{
+display: flex;
+}

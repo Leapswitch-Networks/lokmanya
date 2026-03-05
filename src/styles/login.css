@@ -1,0 +1,87 @@
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+input::placeholder {
+  font-family: 'Inter', sans-serif;
+}
+.login-outer {
+  width: 800px;
+  min-height: 550px;
+  height: auto;
+  background-color: var(--bg-gray);
+  border-radius: 30px;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--black);
+  width: 100%;
+  text-align: center;
+}
+.copyright a{
+  color: #000;
+  font-size: 14px;
+}
+
+.login-inner {
+  width: 330px;
+  height: auto;
+  margin: 50px auto;
+}
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-logo img {
+  height: 100%;
+  width: 200px;
+}
+.input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.forget-pass {
+  text-align: center;
+  margin-top: 20px;
+}
+.forget-pass a {
+  color: #000;
+  text-decoration: underline !important;
+}
+.login-wrapper .input-wrapper {
+  display: flex;
+}
+.change-password-btn:hover{
+  color: #fff !important;
+}
+@media screen and (max-width:767px) {
+  .not-found .login-outer {
+    background-color: unset;
+  }
+  .login-outer {
+      width: 100%;
+      min-height: 300px;
+      padding: 20px;
+  }
+  .copyright {
+      bottom: -60px;
+  }
+  .copyright a{
+      font-size: 14px !important;
+  }
+}

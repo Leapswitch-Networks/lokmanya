@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Account Published</title>
+    <style>
+        * {
+            color: #000;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .container {
+            font-size: 12px;
+        }
+
+        .header h2 {
+            text-align: center;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        .logo {
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            max-width: 75px;
+            height: 75px;
+        }
+
+        .button-wrapper {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #016268;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button span {
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: #01555a;
+        }
+
+        .regards {
+            margin-top: 20px;
+        }
+
+        .regards p {
+            margin: 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div className="container">
+        <p>Dear <%= name %>,</p>
+        <p>
+            <%= userName %>, has filled in the information in the profile and published the account. Please check and
+                approve if everything is in order. If not, you can contact <%= userPhoneNumber %> or email <%= userEmail
+                        %>.
+        </p>
+        <p>Best regards,<br>
+            Mawarid Bashariyah (HR) Admin<br>
+            Daeratul Aqeeq</p>
+    </div>
+</body>
+
+</html>

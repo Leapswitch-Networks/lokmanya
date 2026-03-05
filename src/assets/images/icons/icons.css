@@ -1,0 +1,24 @@
+.notifi-icon {
+  border-radius: 50%;
+  background-color: var(--bg-gray);
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.notification-indicator {
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.note-active{
+  background-color: var(--color-primary);
+}

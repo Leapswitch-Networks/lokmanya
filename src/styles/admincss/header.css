@@ -1,0 +1,75 @@
+/* @import "tailwindcss"; */
+
+.header {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cbc8c8;
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo-sec {
+    width: 100px;
+    fill: var(--primary-color);
+}
+
+.logo-sec {
+    /* padding-left: 25px; */
+    /* changes made by hamza */
+    padding-left: 0px;
+}
+
+
+
+.access-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: fit-content;
+    padding: 0 15px;
+    background-color: var(--bg-gray);
+    border-radius: 50px;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+.access-panel:hover {
+    border-color: var(--color-primary);
+}
+
+.access-panel.active {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.access-panel.active button {
+    color: #fff;
+}
+
+.header-profile-sec {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-profile-sec .prof-img {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+
+@media (width <=1200px) {
+    /* .header{
+        width: calc(100% - 170px);
+        background-color: #fff;
+    } */
+
+}

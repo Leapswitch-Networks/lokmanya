@@ -1,0 +1,161 @@
+.department-page .common-textarea {
+  border: 1px solid #8c8f94 !important;
+  background-color: white;
+  height: 150px;
+  border-radius: 0.375rem;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.department-page .btn-treat-tab {
+  height: 40px;
+  font-size: 14px;
+  padding-inline: 10px;
+}
+
+.department-page .btn-treat-tab :is(svg, path) {
+  fill: #a1a1a1;
+  stroke: #a1a1a1;
+  height: 18px;
+}
+
+:is(.department-page, .diagnostic-page) .file-wrapper {
+  margin-top: 0;
+}
+
+
+.btn-treat-tab {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 40px 10px 20px;
+  border: 1px solid #a1a1a1;
+  color: #a1a1a1;
+  align-content: center;
+  justify-content: space-between;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+.btn-treat-tab svg {
+  position: absolute;
+  right: 10px;
+  /* top: 50%; */
+}
+
+.btn-treat-tab.active {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  background: #0094cd1a;
+}
+
+.btn-treat-tab.active :is(svg, path) {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+
+.treatment-procedure-content,
+.treatment-procedure-content .row,
+.treatment-procedure-content .tab-pane {
+  height: 100%;
+}
+
+.btn-pry-svg:hover svg path {
+  fill: #213C73;
+}
+
+.treatment-procedure-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* === Nested Category Table Styling === */
+
+.nested-table-wrapper {
+  /* margin-left: 20px; */
+}
+
+.nested-category-table {
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.nested-category-table th,
+.nested-category-table td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.nested-category-table tbody tr:hover {
+  background-color: #eef7ff;
+}
+
+.expand-btn {
+  font-size: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin-right: 6px;
+  cursor: pointer;
+  color: #1970cd;
+}
+
+.expand-btn:focus {
+  outline: none;
+}
+
+.cell-id-expand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nested-inner-table th {
+  background-color: #0494cd26;
+  /* color: #fff; */
+}
+
+.hyp-loc-tbl-thead th {
+  background-color: #0094cd !important;
+  color: #fff;
+}
+
+.hyp-loc-tbl-thead th:first-child,
+.hyp-loc-tbl-thead tr:first-child {
+  border-top-left-radius: 10px;
+  border: none;
+}
+
+.hyp-loc-tbl-thead tr:last-child,
+.hyp-loc-tbl-thead th:last-child {
+  border-top-right-radius: 10px;
+  border: none;
+}
+
+.hyp-loc-tbl-thead th:nth-child(1),
+.hyp-loc-tbl-thead th:nth-child(3) {
+  width: 90px;
+}
+
+.treatment-procedure-content .common-textarea {
+  background-color: #fff;
+  border: 1px solid #8c8f94 !important;
+  border-radius: .375rem;
+  height: 150px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.procedure-section .form-check,
+.treatment-section .form-check {
+  border-radius: 6px;
+  padding-block: 5px;
+}

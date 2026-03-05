@@ -1,0 +1,798 @@
+/* .section_space_common {
+  padding-block: 60px;
+} */
+
+.overview-img {
+  width: 100%;
+  height: auto;
+}
+
+.overview-img-box {
+  position: relative;
+}
+
+.overview-counter {
+  position: absolute;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.counter1 {
+  top: 0;
+  right: 0;
+  background-color: #DFF5F5;
+  height: 150px;
+  width: 140px;
+}
+
+.counter2 {
+  bottom: 0;
+  left: 0;
+  background-color: #DFF5F5;
+  height: 135px;
+  width: 140px;
+  /* padding: 5px; */
+}
+
+.overview-counter1 {
+  border-radius: 20px;
+  border: 1px solid #00417b;
+  text-align: center;
+  align-content: center;
+  height: 100%;
+  box-shadow: 0px 0px 9px 2px #134A8559;
+
+}
+
+.overview-counter2 {
+  border-radius: 20px;
+  border: 1px solid #00417b;
+  text-align: center;
+  align-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 9px 2px #134A8559;
+}
+
+.counter-numb {
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.txt-yellow,
+.txt-blue {
+  color: var(--color-primary);
+}
+
+
+/* dr-section  */
+
+.dr-section-inner {
+  background-color: var(--color-cyan-blue);
+  /* padding-top: 60px; */
+  padding-inline: 50px;
+  border-radius: 15px;
+}
+
+.dr-section .section-heading {
+  font-size: 35px;
+}
+
+.dr-subtitle {
+  font-weight: 500;
+}
+
+.dr-content {
+  height: 100%;
+  align-content: center;
+}
+
+.chaiman-img {
+  padding-top: 30px;
+  height: 420px;
+}
+
+.chaiman-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Leadership team section */
+.consultation-card .card-ttl {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* .medicalteam .experts-container .row .col-xl-4.col-md-4.col-6:last-child .meet-ex-image img {
+  object-fit: contain !important;
+} */
+
+
+
+.medicalteam .card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #cbcbcb40;
+}
+
+.medicalteam .card:hover {
+  border: none;
+}
+
+.medicalteam .card .card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.medicalteam .meet-ex-card:hover .doc-info p {
+  opacity: unset;
+  visibility: unset;
+}
+
+.card-gradient {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.card-gradient:hover {
+  padding: 1px;
+}
+
+.custom-card {
+  display: flex;
+}
+
+.custom-card-inner {
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.card-bg-1,
+.card-bg-2,
+.card-bg-3,
+.card-bg-4 {
+  background-image: url("../site/assets/images/ourmissionicon.webp");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 30px) 30px;
+  background-color: var(--color-cyan-blue);
+  width: 100%;
+}
+
+/* Story section */
+.storysection {
+  background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+}
+
+.storysection .swiper-pagination {
+  position: unset;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
+/* .storysection .timeline-dots .swiper-wrapper {
+  padding-bottom: 30px;
+} */
+.storysection .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--color-primary) !important;
+}
+
+.storysection .swiper-pagination .swiper-pagination-bullet-active .bullet-date .card-ttl {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.storysection .swiper-pagination .swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide .bullet-date {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.swiper-slide-active .bullet-date .bullet-circle {
+  background-color: var(--color-primary) !important;
+}
+
+.bullet-circle {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+/* .storysection .swiper-pagination .swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #242424;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+} */
+/* .timeline-dots {
+  position: relative;
+  margin-top: 30px;
+} */
+/* .timeline-dots::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 1.1px;
+  top: 25%;
+} */
+/* .bullet-date {
+  position: relative;
+  bottom: -28px;
+}
+.bullet-date::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  border-radius: 100%;
+  border: 1px solid var(--color-primary);
+  width: 25px;
+  height: 25px;
+  top: -27px;
+  left: 10px;
+} */
+.storysection .swiper-slide {
+  height: auto;
+}
+
+.timeline-card {
+  background: #fff;
+  border-radius: 10px;
+  /* padding:5px; */
+  border: 1px solid var(--border-color);
+  transition: all .6s ease-in;
+  height: 100%;
+}
+
+.timeline-card .patient-service-img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.timeline-card .patient-service-img {
+  padding: 15px;
+}
+
+.timeline-card .patient-service-img img {
+  object-fit: contain;
+}
+
+.timeline-card .swiper-btn-prev {
+  left: -15px;
+}
+
+.timeline-card .swiper-btn-next {
+  right: -15px;
+}
+
+.fancybox__thumbs.is-modern {
+  --f-thumb-clip-width: 70px !important;
+}
+
+/* .swiper-slide-active .bullet-date::before {
+  background-color: var(--color-primary);
+} */
+
+.history-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-top-left-radius: 15px; */
+  /* border-bottom-left-radius: 15px; */
+}
+
+.history-content {
+  align-content: center;
+  height: 100%;
+  padding-inline: 30px;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* .storysection .swiper {
+  border-radius: 15px;
+} */
+
+.swiper-btn-prev {
+  position: absolute;
+  left: -15px;
+  background-color: #fff;
+  padding: 5px 8px;
+  border-radius: 11px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  border: 1.03px solid #2424241a;
+  cursor: pointer;
+}
+
+.swiper-btn-next {
+  position: absolute;
+  right: -15px;
+  background-color: #fff;
+  padding: 5px 8px;
+  border-radius: 11px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  border: 1.03px solid #2424241a;
+  cursor: pointer;
+}
+
+.storysection .swiper-btn-prev,
+.storysection .swiper-btn-next {
+  bottom: unset;
+  top: 50%;
+}
+
+/* Honours And recognition section */
+
+.honors-date {
+  font-style: italic;
+}
+
+.honours-box {
+  background-color: var(--color-primary);
+}
+
+.honours-bg {
+  /* background-color: #ddfcfb; */
+  height: 200px;
+  margin-top: 60px;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid #2424241a;
+  background-color: white;
+  box-shadow: 0px 4px 7px 0px #24242424;
+
+}
+
+/* .honours-bg-1 {
+  background-color: #ddfcfb;
+}
+.honours-bg-2 {
+  background-color: #dae7f6;
+}
+.honours-bg-3 {
+  background-color: #efedd1;
+}
+.honours-bg-4 {
+  background-color: #dae7f6;
+} */
+img.honours-img {
+  position: absolute;
+  top: -60px;
+  height: 145px;
+  width: 145px;
+  left: 0px;
+  right: 0px;
+  margin-inline: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.honours-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-inline: 45px;
+  text-align: center;
+  position: relative;
+}
+
+.honors-credits {
+  font-size: 15px;
+
+}
+
+.honours-content::before {
+  content: "";
+  position: absolute;
+  background-image: url(../site/assets/images/featherLeft.webp);
+  background-repeat: no-repeat;
+  height: 100px;
+  left: 7px;
+  top: 90px;
+  width: 85px;
+  background-size: contain;
+}
+
+.honours-content::after {
+  content: "";
+  position: absolute;
+  background-image: url(../site/assets/images/featherRight.webp);
+  background-repeat: no-repeat;
+  height: 100px;
+  right: -15px;
+  top: 90px;
+  width: 85px;
+  background-size: contain;
+
+}
+
+.honours-slider {
+  position: relative;
+}
+
+.honourssection .swiper-pagination {
+  position: unset;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 25px auto 0 auto;
+  padding: 8px;
+  background-color: var(--color-primary-light-new);
+  border-radius: 18px;
+}
+
+.honourssection .swiper-btn-prev,
+.honourssection .swiper-btn-next {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.honourssection .swiper-pagination-bullet-active {
+  background: var(--color-primary) !important;
+}
+
+.featherl {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.featherr {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+
+/* Lokmanya Network section */
+
+.card-gradient:hover .direction-link {
+  text-decoration: underline !important;
+}
+
+.direction-link {
+  font-weight: 500;
+}
+
+.location-txt {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.lokmanyanetwork .card-img-top {
+  border-radius: 15px;
+}
+
+.lokmanyanetwork .card {
+  border-radius: 15px;
+  height: 100%;
+}
+
+.lokmanyanetwork .card:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.lokmanyanetwork .card-title-w {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.lok-network .col-lg-20p {
+  width: 20%;
+}
+
+.experts-container .meet-ex-card {
+  height: 100%;
+  z-index: unset;
+  cursor: pointer;
+}
+
+.rd-more {
+  color: #00417b !important;
+}
+
+.meet-ex-card:hover .rd-more {
+  color: #224075 !important;
+}
+
+.meet-ex-card {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.meet-ex-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .experts-container .meet-ex-info{
+  height: calc(100% - 300px);
+} */
+
+.experts-container .meet-ex-image img {
+  object-fit: fill;
+  height: 100%;
+}
+
+.experts-container .meet-ex-image {
+  height: 200px;
+  background: radial-gradient(127.71% 127.71% at 50% 30.29%, #30318C 0%, #54BE95 100%);
+}
+
+/* About Us Team Modal starts*/
+
+.director-close-btn {
+  top: 15px;
+  right: 15px;
+}
+
+.director-ctnt {
+  padding: 20px;
+}
+
+.director-overlay {
+  overflow-y: auto;
+}
+
+.director-modal {
+  background: radial-gradient(127.71% 127.71% at 50% 30.29%, #30318C 0%, #54BE95 100%);
+  padding: 30px;
+  border-radius: 15px;
+  overflow: auto;
+  max-height: 500px;
+  height: unset !important;
+}
+
+.read-more-red {
+  color: var(--color-primary-red);
+}
+
+.director-card:hover .read-more-red {
+  color: var(--color-primary);
+}
+
+.director-modal .modal-close-custom {
+  right: 15px !important;
+  top: 20px !important;
+  font-size: 25px !important;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .director-ctnt {
+    padding: 15px;
+  }
+
+  .director-modal {
+    padding: 15px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .director-close-btn {
+    top: 15px !important;
+    right: 15px !important;
+    left: unset !important;
+    margin: unset !important;
+  }
+
+}
+
+/* About Us Team Modal ends */
+
+@media screen and (min-width: 1025px) {
+  .medicalteam {
+    padding-inline: 16%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .counter1 {
+    height: 109px;
+    width: 101px;
+  }
+
+  .counter2 {
+    height: 99px;
+    width: 103px;
+  }
+
+  .overview-counter {
+    padding: 8px;
+  }
+
+  .counter-numb {
+    font-size: 25px;
+  }
+
+  .storysection .swiper-pagination {
+    gap: 75px;
+  }
+
+  .storysection .swiper-pagination .swiper-pagination-bullet {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* img.honours-img {
+    height: 115px;
+    width: 115px;
+  } */
+  .chaiman-img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /* .experts-container .meet-ex-card{
+    height: unset;
+  } */
+  .experts-container .meet-ex-info {
+    height: unset;
+  }
+
+  .counter2 {
+    height: 100px;
+    width: 110px;
+  }
+
+  .counter1 {
+    height: 111px;
+    width: 105px;
+  }
+
+  .chaiman-img {
+    height: 275px;
+    padding-top: 15px;
+  }
+
+  .dr-content {
+    padding-top: 25px;
+  }
+
+  .storysection .swiper-pagination {
+    gap: 55px;
+  }
+
+  /* .consultation-card .card-ttl {
+    font-size: 15px;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .overview-counter {
+    padding: 15px;
+  }
+
+  .counter1 {
+    height: 160px;
+    width: 151px;
+  }
+
+  .counter2 {
+    height: 145px;
+    width: 150px;
+  }
+
+  .counter-numb {
+    font-size: 23px !important;
+  }
+
+  .dr-section-inner {
+    padding-inline: 25px;
+  }
+
+  .storysection .swiper-pagination {
+    gap: 50px;
+  }
+
+  .history-content {
+    padding-block: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .history-img {
+    border-bottom-left-radius: 0px;
+  }
+
+  /* .swiper-btn-prev {
+    left: 0px;
+  }
+  .swiper-btn-next {
+    right: 0px;
+  } */
+  .fancybox__thumbs.is-modern {
+    --f-thumb-clip-width: 32px !important;
+  }
+
+  .experts-container .meet-ex-info {
+    padding-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .honours-bg {
+    height: 180px;
+  }
+
+  .honours-content::before {
+    top: 70px;
+  }
+
+  .honours-content::after {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .counter1 {
+    height: 125px;
+    width: 115px;
+  }
+
+  .counter2 {
+    height: 111px;
+    width: 115px;
+  }
+
+  .overview-counter {
+    padding: 10px;
+  }
+
+  .storysection .swiper-pagination {
+    gap: 25px;
+  }
+
+  .storysection .swiper-pagination .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* .consultation-card .card-ttl {
+    font-size: 11px;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  .experts-container .meet-ex-image img {
+    object-fit: cover !important;
+  }
+}

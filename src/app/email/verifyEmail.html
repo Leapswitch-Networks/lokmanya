@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Password</title>
+  <style>
+  *{
+    color:#000;
+  }
+  </style>
+</head>
+
+<body>
+  <div className="container">
+    <p>Dear <%= name %>,</p>
+    <p>Thank you for registering with Daeratul Aqeeq. To ensure the security of your account and activate your login, an email verification is required.</p>
+    <p>Please click the following link to verify your email:<br> <%= resetLink %><br>
+        If the link cannot be accessed by clicking, kindly paste it into your browser.</p>
+    <p>Password: <b><%= password %></b></p>
+    <p>Note: For security reasons, this link will expire in 72 hours.</p>
+    
+    <p>Should you not have initiated this log in, please disregard this email. Your information shall remain confidential and secure.</p>
+    <p>Best regards,<br>
+        Mawarid Bashariyah (HR) Admin<br>
+      Daeratul Aqeeq</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree";
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0094cd;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #ccc;
+}
+
+.active-scroll-spy {
+  background-color: yellowgreen;
+  border-radius: 15px;
+}
+
+:root {
+  --color-primary: #2E5386;
+  --color-primary-red: #c2202d;
+  --color-primary-light: #eac6cb;
+  --bg-gray: #f8f8f8;
+  --text-gray-color: #898989;
+  --black: #000;
+  --radius: 30px;
+  --bg-pending: #f5a623;
+  --bg-inactive: #d77748;
+  --bg-active: #0ea759;
+  --bg-admin: #44b678;
+  --bg-user: #5999f7;
+  --bg-status-box: #f6e8ea;
+  --color-primary-new: #213C73;
+  --color-primary-sky-new: #27BCB8;
+  --color-primary-light-new: #D4EEED;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+input:-webkit-autofill:focus,
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+@font-face {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Figtree";
+  src: url("../fonts/Figtree/static/Figtree-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-family: "Figtree";
+  src: url("../fonts/Figtree/static/Figtree-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-family: "Figtree";
+  src: url("../fonts/Figtree/static/Figtree-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-family: "Figtree";
+  src: url("../fonts/Figtree/static/Figtree-Bold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-family: "Figtree";
+  src: url("../fonts/Figtree/static/Figtree-ExtraBold.ttf");
+  font-weight: 700;
+}
+
+/* @font-face {
+  font-display: swap;
+  font-family: 'open sans';
+  src: url("../fonts/Figtree/static/OpenSans-ExtraBold.ttf");
+  font-weight: 800;
+} */
+
+/* to set font arabic */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-body {
+  margin-top: 30px;
+}
+
+/* layout styling  */
+
+.horizontal-p-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.full-container {
+  padding: 20px;
+}
+
+.profile-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+p,
+span,
+div,
+label,
+a {
+  text-decoration: none !important;
+  font-size: 16px;
+}
+
+.main-heading {
+  color: var(--color-primary);
+  font-size: 22px;
+  margin: 0;
+}
+
+/* action icon */
+.action-icon {
+  background-color: var(--bg-gray);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  margin-right: 5px;
+}
+
+.action-icon a {
+  font-size: 12px;
+}
+
+.action-icon:hover {
+  border-color: var(--color-primary);
+}
+
+.border-hover {
+  border: 1px solid transparent;
+}
+
+.border-hover:hover {
+  border-color: var(--color-primary);
+}
+
+/* datatable style  */
+.ejvslR {
+  background-color: transparent !important;
+  height: 50px !important;
+  display: block !important;
+  /* padding: 0 !important; */
+}
+
+/* .rdt_TableCell:not(.rdt_TableCell:nth-last-child(2),
+  .rdt_TableCell:nth-last-child(1))::after {
+  content: "";
+  height: 50%;
+  width: 2px;
+  position: absolute;
+  right: 10px;
+  background: #f8f8f8;
+} */
+
+/* chekcbox */
+/* .chekcbox:has(> .form-check-input:checked){
+  border: none;
+} */
+body .form-check-input:focus {
+  border-color: #a71d30;
+  box-shadow: none;
+}
+
+body .form-check-input {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+body .form-check-input:checked {
+  background-color: #a71d30;
+  border-color: #a71d30;
+}
+
+body .form-check-label {
+  width: fit-content;
+  cursor: pointer;
+}
+
+label {
+  /* white-space: nowrap; */
+  color: var(--text-gray-color);
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* input checkbox rounded */
+.input-check[type="checkbox"] {
+  border-radius: 50% !important;
+  height: 15px;
+  width: 15px;
+}
+
+.input-check:checked[type="checkbox"] {
+  --bs-form-check-bg-image: none !important;
+}
+
+/* 
+label::selection {
+  user-select: none;
+} */
+.Toastify {
+  z-index: 9999999 !important;
+  position: relative !important;
+}
+
+.disable_form_fields :is(input, select, textarea, .user-access-dropdown, .date-wrapper) {
+  pointer-events: none;
+}
+
+.disable_form_fields div:has(> :is(input, select, textarea, .user-access-dropdown, .date-wrapper)) {
+  cursor: not-allowed;
+}
+
+.disable_form_fields .emp_wrapper :is(label) {
+  cursor: not-allowed !important;
+}
+
+.disable_form_fields label:not(.emp_wrapper label) {
+  display: block;
+}
+
+.disable_form_fields :is(.button-primary, [type="file"]) {
+  display: none;
+}
+
+.main-heading {
+  position: relative;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.heading-both {
+  position: relative;
+}
+
+/* .main-heading::after{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: url(../images/icons/heading-befor.svg);
+  background-repeat: no-repeat;
+  bottom: -10px;
+  right: -19px;
+}
+.heading-both::before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: url(../images/icons/heading-befor.svg);
+  background-repeat: no-repeat;
+  bottom: -10px;
+  left: -19px;
+  transform: rotateY(180deg);
+} */
+.select-field {
+  width: 100%;
+  border: 1px solid #8c8f94;
+  height: 40px;
+  border-radius: 0.375rem;
+  padding: 8px 12px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 14px;
+  background-size: 10px;
+  color: rgb(26 26 26 / 70%);
+}
+
+.select2-selection:after {
+  content: "";
+  position: absolute;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+  background-size: 12px;
+  top: 0px;
+  right: 8px;
+  height: 40px;
+  width: 20px;
+  z-index: 1;
+}
+
+.select2-selection {
+  border-color: #8c8f94 !important;
+  height: 40px;
+  padding-top: 4px;
+  padding-left: 8px;
+  position: relative;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+  margin-right: 25px !important;
+  margin-top: -2px !important;
+
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear span {
+  font-size: 22px;
+}
+
+/* accessibilty icon hide*/
+#INDbtnWrap {
+  display: none !important;
+  opacity: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+#INDmenu-btn {
+  display: none !important;
+  opacity: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+div#INDshadowRootWrap {
+  opacity: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+}

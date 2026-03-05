@@ -1,0 +1,442 @@
+.banner-main {
+    padding-inline: 10px;
+    margin-top: 30px;
+}
+
+.banner-left-col {
+    margin-right: -30px;
+    height: 100%;
+}
+
+.banner-right-col {
+    margin-left: -30px;
+}
+
+.banner-left-sec {
+    min-height: 350px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+    display: flex;
+    padding-inline: 100px;
+    align-items: center;
+    clip-path: polygon(97.869% 0%, 97.869% 0%, 98.206% 0.075%, 98.526% 0.291%, 98.825% 0.638%, 99.097% 1.102%, 99.339% 1.673%, 99.547% 2.339%, 99.716% 3.088%, 99.842% 3.908%, 99.921% 4.787%, 99.948% 5.714%, 99.948% 33.634%, 99.948% 33.634%, 99.945% 33.86%, 99.935% 34.084%, 99.919% 34.303%, 99.897% 34.518%, 99.869% 34.727%, 99.835% 34.929%, 99.795% 35.124%, 99.75% 35.311%, 99.699% 35.488%, 99.643% 35.654%, 94.261% 50.449%, 94.261% 50.449%, 94.093% 50.948%, 93.941% 51.478%, 93.805% 52.038%, 93.686% 52.622%, 93.585% 53.23%, 93.5% 53.857%, 93.434% 54.502%, 93.386% 55.161%, 93.357% 55.83%, 93.347% 56.509%, 93.347% 94.286%, 93.347% 94.286%, 93.32% 95.213%, 93.241% 96.092%, 93.115% 96.912%, 92.946% 97.661%, 92.738% 98.327%, 92.496% 98.898%, 92.224% 99.362%, 91.925% 99.709%, 91.606% 99.925%, 91.268% 100%, 2.079% 100%, 2.079% 100%, 1.742% 99.925%, 1.422% 99.709%, 1.123% 99.362%, 0.851% 98.898%, 0.609% 98.327%, 0.401% 97.661%, 0.232% 96.912%, 0.106% 96.092%, 0.027% 95.213%, 0% 94.286%, 0% 5.714%, 0% 5.714%, 0.027% 4.787%, 0.106% 3.908%, 0.232% 3.088%, 0.401% 2.339%, 0.609% 1.673%, 0.851% 1.102%, 1.123% 0.638%, 1.422% 0.291%, 1.742% 0.075%, 2.079% 0%, 97.869% 0%);
+}
+
+.banner-left-sec h1 {
+    text-transform: uppercase;
+}
+
+.banner-left-sec h1,
+.banner-left-sec p {
+    color: #fff;
+}
+
+/* .banner-left-sec::before,.bg-before::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/common-bg.webp) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+.has-bg-image .bg-before::before {
+    opacity: 0;
+}
+
+.banner-right {
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+    max-height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-right-sec {
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    position: relative;
+    background-color: yellowgreen;
+    clip-path: polygon(16.972% 0%, 16.972% 0%, 16.312% 0.075%, 15.686% 0.291%, 15.103% 0.638%, 14.57% 1.102%, 14.097% 1.673%, 13.691% 2.339%, 13.36% 3.088%, 13.114% 3.908%, 12.96% 4.787%, 12.907% 5.714%, 12.907% 33.634%, 12.907% 33.634%, 12.887% 34.313%, 12.831% 34.984%, 12.737% 35.643%, 12.607% 36.287%, 12.442% 36.915%, 12.243% 37.522%, 12.01% 38.107%, 11.745% 38.666%, 11.448% 39.196%, 11.12% 39.694%, 0.596% 54.489%, 0.596% 54.489%, 0.486% 54.655%, 0.387% 54.832%, 0.298% 55.019%, 0.221% 55.214%, 0.154% 55.416%, 0.1% 55.625%, 0.056% 55.84%, 0.025% 56.059%, 0.006% 56.283%, 0% 56.509%, 0% 94.286%, 0% 94.286%, 0.053% 95.213%, 0.207% 96.092%, 0.454% 96.912%, 0.784% 97.661%, 1.19% 98.327%, 1.664% 98.898%, 2.197% 99.362%, 2.78% 99.709%, 3.405% 99.925%, 4.065% 100%, 95.935% 100%, 95.935% 100%, 96.595% 99.925%, 97.22% 99.709%, 97.803% 99.362%, 98.336% 98.898%, 98.81% 98.327%, 99.216% 97.661%, 99.546% 96.912%, 99.793% 96.092%, 99.947% 95.213%, 100% 94.286%, 100% 5.714%, 100% 5.714%, 99.947% 4.787%, 99.793% 3.908%, 99.546% 3.088%, 99.216% 2.339%, 98.81% 1.673%, 98.336% 1.102%, 97.803% 0.638%, 97.22% 0.291%, 96.595% 0.075%, 95.935% 0%, 16.972% 0%);
+}
+
+/* common slider  */
+.slider-btn-prev,
+.slider-btn-next {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 11px;
+    top: calc(50% - 20px);
+    transform: translateY(-50%);
+    z-index: 999;
+    border: 1.03px solid #2424241a;
+    cursor: pointer;
+
+}
+
+.slider-btn-prev {
+    left: -10px;
+}
+
+.slider-btn-next {
+    right: -10px;
+}
+
+.common-slider-parent .swiper-pagination {
+    position: unset;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content !important;
+    margin: auto;
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #ebf4ff;
+    border-radius: 18px;
+}
+
+.common-slider-parent .swiper-pagination-bullet-active {
+    background: var(--color-primary) !important;
+}
+
+
+/* Appointment modal */
+#appointModal {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#appointModal .flexBtn {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=file]::file-selector-button {
+    /* border: 2px solid #6c5ce7; */
+    /* padding: .2em .4em; */
+    /* border-radius: .2em; */
+    background-color: rgb(226, 226, 226, 0.4);
+    transition: 1s;
+    color: black;
+}
+
+input[type=file]::file-selector-button:hover {
+    /* background-color: #81ecec; */
+    background-color: rgb(226, 226, 226);
+
+    /* border: 2px solid #00cec9; */
+    color: black;
+}
+
+
+/* Book Appointmet and Call Now section css starts */
+.enquiry-meet-section {
+    margin-top: 70px;
+    /* margin-bottom: 30px; */
+}
+
+.enquiry-meet-inner {
+    border-radius: 10px;
+    min-height: 275px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 65px;
+}
+
+.enquiry-meet-img {
+    /* height: 370px; */
+    height: auto;
+    width: 305px;
+    position: absolute;
+    bottom: 0;
+}
+
+.enquiry-meet-img img {
+    /* width: 100%; */
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* Book Appointmet and Call Now section css ends */
+
+
+/* QandAns section */
+.btn-treat-tab.active {
+    background: #0094cd1a;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.treatment-procedure-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.btn-treat-tab {
+    align-content: center;
+    align-items: center;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    color: #a1a1a1;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 10px 40px 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.btn-treat-tab svg {
+    position: absolute;
+    right: 10px;
+}
+
+.btn-treat-tab.active :is(svg, path) {
+    fill: var(--color-primary);
+    stroke: var(--color-primary);
+}
+
+.btn-see-more {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-see-more:hover {
+    color: #fff;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: 0.3s;
+}
+
+.treat-content-row {
+    margin-top: 20px;
+}
+
+.custom-item-modal .why-choose-section-card {
+    box-shadow: none;
+    padding: 0;
+}
+
+/* QandAns section */
+
+
+/* Location section starts */
+.locations-card img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.locations-card {
+    padding: 10px;
+    background-color: #fff;
+    border: 1.08px solid #20202033;
+    border-radius: 15px;
+    height: 100%;
+
+}
+
+.locations-card-body i {
+    color: #233877;
+    font-size: 14px;
+}
+
+.disabled-btn {
+    background-color: #ccc !important;
+    cursor: not-allowed !important;
+}
+
+.custom-spinner {
+    border-color: #fff !important;
+    border-right-color: transparent !important;
+}
+
+.button-primary:hover .custom-spinner {
+    border-color: #2E7B9A !important;
+    border-right-color: transparent !important;
+}
+
+/* Location section ends */
+@media screen and (max-width:1600px) {
+    .banner-left-col {
+        margin-right: -25px;
+    }
+
+    .banner-right-col {
+        margin-left: -25px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .banner-left-col {
+        margin-right: -20px;
+    }
+
+    .banner-right-col {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .banner-left-col {
+        margin-right: -15px;
+    }
+
+    .banner-right-col {
+        margin-left: -15px;
+    }
+
+    .banner-left-sec,
+    .banner-right-sec {
+        min-height: 300px;
+    }
+
+    .banner-left-sec {
+        padding-inline: 60px;
+    }
+
+    .banner-right {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .banner-left-col {
+        margin-right: -10px;
+    }
+
+    .banner-right-col {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 1319px) and (min-width:1024px) {
+    .enquiry-meet-section {
+        margin-top: 0;
+        /* margin-bottom: 30px; */
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .banner-left-sec {
+        padding-left: 30px;
+    }
+
+    .enquiry-meet-section {
+        margin-top: 0px;
+        /* margin-bottom: 30px; */
+    }
+}
+
+@media screen and (max-width:990px) {
+    .enquiry-meet-section {
+        /* margin-top: 55px; */
+        /* margin-bottom: 30px; */
+    }
+
+    .enquiry-meet-img {
+        height: 290px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner-left-sec {
+        padding: 20px;
+        margin-bottom: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-main {
+        padding-inline: 15px;
+        margin-top: 15px;
+    }
+
+    .banner-right-col,
+    .banner-left-col {
+        margin: 0;
+    }
+
+    .banner-left-sec,
+    .banner-right-sec {
+        clip-path: margin-box;
+        border-radius: 10px;
+    }
+
+    .get-in-touch::before,
+    .get-in-touch::after {
+        display: none;
+    }
+
+    .banner-left-sec,
+    .banner-right-sec {
+        min-height: 200px;
+    }
+
+    .banner-left-sec h1,
+    .banner-left-sec p {
+        text-align: center !important;
+    }
+
+    .enquiry-meet-img {
+        height: 370px;
+        width: 305px;
+        position: unset;
+        margin-inline: auto;
+    }
+
+    .enquiry-meet-section {
+        margin-top: 0px;
+        /* margin-bottom: 15px; */
+        padding-inline: 0 !important;
+        padding: 0;
+    }
+
+    .enquiry-meet-section .enquiry-meet-inner {
+        padding: 30px 15px !important;
+        border-radius: 0;
+        min-height: unset;
+        height: 100%;
+    }
+
+    /* .enquiry-meet-ctnt {
+        padding-inline: 15px !important;
+    } */
+}
+
+@media screen and (max-width:550px) {
+    .enquiry-meet-img {
+        height: 260px;
+        width: 215px;
+    }
+}
+
+.blog-ttl {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+}

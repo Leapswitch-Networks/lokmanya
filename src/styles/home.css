@@ -1,0 +1,879 @@
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.desktop-banner,
+.mobile-banner {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mobile-banner {
+    display: none;
+}
+
+.banner .enqury-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgb(255 255 255);
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 9;
+}
+
+.form-heading {
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+/* services sect  */
+.service-card-outer :is(.button-primary.custom-select, button, input, select) {
+    border-radius: inherit;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.services .service-card-outer {
+    width: calc(20% - 20px);
+}
+
+.services .service-card {
+    min-height: 115px;
+}
+
+.services .card-subtitle {
+    color: #242424;
+}
+
+/* .services .icon-container svg path{
+    fill: url(#paint0_linear_1252_152);
+} */
+.services .icon-container svg path {
+    fill: url(#paint0_linear_3678_934);
+}
+
+
+.icon-container:hover svg path {
+    fill: #fff;
+}
+
+/* .service-card{
+    position: relative;
+}
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 12px;
+    background: #2424241a;
+    z-index: -1;
+    transition: background 0.6s ease-in-out;
+}
+.service-card:hover::before {
+    background: linear-gradient(315deg, #f6811f 0%, #46566e 51.09%, #134a85 100%);
+} */
+/* achievement sec  */
+/* .insights {
+    padding-top: 0;
+} */
+.achievement .section-heading {
+    text-align: left;
+}
+
+.achievement img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.achievement .achieveLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* why-choose sec  */
+.why-choose {
+    position: relative;
+    background: var(--dark-radial-grad);
+    overflow: hidden;
+}
+
+.why-choose .main-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.why-choose-row .col-md-4 {
+    position: relative;
+}
+
+.why-choose .main-img img {
+    z-index: 9;
+
+}
+
+.why-choose-inner {
+    padding-top: 60px;
+}
+
+/* .why-choose .main-img::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+    height: 400px;
+    width: 400px;
+    z-index: 7;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgb(39, 188, 184, 0.5) 0%, rgba(39, 188, 184, 0) 100%);
+    box-shadow: 0px -15px 30px -7px rgba(39, 188, 184);
+} */
+
+.why-choose .main-img::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+    height: 400px;
+    width: 400px;
+    z-index: 7;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(84, 190, 149, 0.6) 0%, rgba(84, 190, 149, 0) 100%);
+    filter: blur(30px);
+    opacity: 0.9;
+}
+
+
+
+/* .why-choose::before,.opinions::before,.meet-doctors::before {
+    position: absolute;
+    content: "";
+    background: url(../../assets/images/common-bg.webp) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    opacity: .03;
+    z-index: 8;
+} */
+.why-choose-card {
+    max-width: 350px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    background: #fff;
+    height: fit-content;
+    box-shadow: 1.57px 3.15px 12.6px 0px #00000012;
+    z-index: 65;
+}
+
+.why-choose-card h4 {
+    font-weight: 600;
+    margin-block: 10px;
+}
+
+.why-choose-card p {
+    margin: 0;
+    text-align: center;
+}
+
+.card-1 {
+    left: 0;
+    top: 0;
+}
+
+.card-2 {
+    bottom: 65px;
+    right: 0;
+}
+
+.card-3 {
+    right: 0;
+    top: 0;
+}
+
+.card-4 {
+    left: 0;
+    bottom: 65px;
+}
+
+.why-choose-card img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.whyMobileCard {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* position: absolute; */
+    background: #fff;
+    height: 100%;
+    box-shadow: 1.57px 3.15px 12.6px 0px #00000012;
+    text-align: center;
+    /* z-index: 99; */
+}
+
+.whyMobileCard img {
+    object-fit: contain;
+}
+
+.whyChooseMobile {
+    display: none;
+}
+
+.whyChooseMobile .swiper-slide {
+    height: auto;
+}
+
+.whyChooseMobile .position-relative {
+    z-index: 50;
+}
+
+.whyChooseMobile .main-img img {
+    height: 250px;
+}
+
+.whyChooseMobile .swiper-btn-prev {
+    left: -12px;
+}
+
+.whyChooseMobile .swiper-btn-next {
+    right: -12px;
+}
+
+.whyChooseMobile .swiper-btn-prev,
+.whyChooseMobile .swiper-btn-next {
+    bottom: unset;
+    top: 50%;
+}
+
+/*  */
+.chairman,
+.meet-doctors-inner {
+    padding-top: 60px;
+}
+
+.chairman-img {
+    position: relative;
+}
+
+.chairman-img::before {
+    position: absolute;
+    background: url("../site/assets/images/chairman-bg.webp") no-repeat;
+    content: "";
+    background-size: contain;
+    width: 340px;
+    height: 220px;
+    bottom: 0;
+    right: 0;
+}
+
+.chairman-img img {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-left: 50px;
+}
+
+a.icon-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid #2424241A;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chairman .section-heading {
+    text-align: left;
+}
+
+.chairman h4 {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* insight sec  */
+.insight-card {
+    transition: all 0.6s ease-in;
+    overflow: hidden;
+    display: block;
+}
+
+.insight-card:hover img {
+    transform: scale(1.1);
+}
+
+.insight-card:hover h4 {
+    text-decoration: underline;
+}
+
+.insight-img {
+    width: 100%;
+    height: 195px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.insight-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in;
+}
+
+.insight-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 8px 0 10px;
+}
+
+.insight-info .category {
+    color: #134A85;
+}
+
+.insight-info .date-time {
+    position: relative;
+}
+
+.insight-info .date-time::before {
+    content: "•";
+    position: absolute;
+    left: -13px;
+    top: 0px;
+}
+
+/* .insights :is(.col-md-3:nth-child(2), .col-md-3:nth-child(4)) .insight-card {
+    padding-top: 30px;
+} */
+
+/* opinions sec  */
+.opinions {
+    /* background-color: var(--color-cyan-blue); */
+    position: relative;
+}
+
+.opinions .row {
+    justify-content: center;
+}
+
+.opinions-inner {
+    position: relative;
+    /* padding-block: 60px; */
+}
+
+.opinions-card {
+    background: #fff;
+    padding: 15px 10px 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 1px #24242429;
+}
+
+/* .opinions-card:hover img {
+    transform: scale(1.1);
+} */
+
+.opinion-img {
+    width: 100%;
+    height: 145px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.opinions-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s ease-in;
+}
+
+.opinions-card .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    z-index: 80;
+}
+
+.op-video-img img {
+    object-fit: fill;
+}
+
+/* opinions yt video modal starts */
+/* Modal */
+.modal-overlay-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content-custom {
+    position: relative;
+    width: 76%;
+    height: 535px;
+}
+
+.modal-close-custom {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50% !important;
+    width: 32px;
+    height: 32px !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    cursor: pointer !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-custom:hover {
+    background-color: #f0f0f0;
+}
+
+.modal-video-custom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.bodyClass .sticky-header.visible,
+.bodyClass .mobile-bootom-header.sticky,
+.bodyClass .bottom-fixed-buttons {
+    z-index: 10;
+}
+
+.bodyClass .why-choose-card {
+    z-index: 5;
+}
+
+/* opinions yt video modal ends */
+#review-carousel .rfm-child {
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.common-card {
+    background: var(--dark-blue-gradient);
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: 100%;
+    max-width: 350px;
+    min-height: 330px;
+    position: relative;
+    cursor: text;
+    /* box-shadow: 2px 4px 7px 0px #24242426; */
+    margin-bottom: 5px;
+}
+
+.common-card img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.common-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    color: #fff;
+
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+button.owl-dot.active span {
+    width: 14px !important;
+    background-color: var(--color-primary) !important;
+}
+
+#youtube-carousel .common-card {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#youtube-carousel .overlay {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(52, 52, 52, 0) 0%, #343434 100%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    pointer-events: none;
+}
+
+#youtube-carousel p {
+    position: absolute;
+    bottom: 10px;
+    z-index: 999999;
+    color: #fff;
+    padding-inline: 10px;
+    width: 100%;
+}
+
+#youtube-carousel img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#review-carousel {
+    margin-top: 20px;
+}
+
+#review-carousel .item {
+    direction: ltr;
+}
+
+
+
+
+
+img.quote-mark {
+    height: 35px;
+    width: 35px !important;
+}
+
+p.review {
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: unset; */
+
+    white-space: normal;
+}
+
+p.author-name {
+    position: absolute;
+    bottom: 20px;
+    font-weight: 500;
+    font-style: italic;
+    width: 100%;
+    left: 0;
+    padding-inline: 20px;
+}
+
+.rfm-initial-child-container {
+    align-items: stretch !important;
+}
+
+/* meet-doctors sec  */
+.meet-doctors {
+    background: linear-gradient(360deg, #54BE95 -43.6%, #30318C 100%);
+    position: relative;
+    z-index: 9;
+}
+
+.meet-doctors-inner {
+    position: relative;
+    z-index: 99;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet-doctors img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    position: relative;
+    z-index: 8;
+}
+
+
+.meet-doctors-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* changes made by hamza */
+
+.specialities {
+    scroll-margin: 100px;
+}
+
+@media screen and (max-width:1440px) {
+    .why-choose .main-img::before {
+        top: 40px;
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .services .service-card-outer {
+        width: calc(25% - 20px);
+    }
+
+    .why-choose-card {
+        padding: 20px;
+    }
+
+    .card-2,
+    .card-4 {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .banner .enqury-form {
+        width: 90%;
+    }
+
+    .services {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .services .service-card-outer {
+        width: calc(33.33% - 10px);
+    }
+
+    .chairman-img::before {
+        width: 100%;
+        background-position: right;
+    }
+
+    .insight-img {
+        height: 180px;
+    }
+
+    .why-choose {
+        display: none;
+    }
+
+    .whyChooseMobile {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .section-heading {
+        text-align: center !important;
+    }
+
+    .mobile-banner {
+        display: block !important;
+    }
+
+    .desktop-banner {
+        display: none;
+    }
+
+    .banner .enqury-form {
+        padding: 15px 15px 0;
+    }
+
+    .banner .enqury-form {
+        flex-direction: column;
+        position: static;
+        transform: translateX(0%);
+        width: 100%;
+        gap: 10px;
+    }
+
+    .banner .button-primary {
+        width: 100%;
+    }
+
+    .achievement,
+    .insights {
+        padding-bottom: 30px;
+    }
+
+    .achievement img {
+        max-width: 50%;
+        margin: auto;
+        display: block;
+        padding-top: 20px;
+    }
+
+    .why-choose-inner {
+        padding-top: 30px;
+    }
+
+    .chairman,
+    .meet-doctors-inner {
+        padding-top: 30px;
+    }
+
+    .chairman-img img {
+        padding: 0px 50px 4px;
+    }
+
+    .chairman-img .icon-container {
+        height: 32px;
+        width: 32px;
+        border-radius: 8px;
+        bottom: 2px;
+    }
+
+    .chairman-img-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .insights :is(.col-md-3:nth-child(2), .col-md-3:nth-child(4)) .insight-card {
+        padding-top: 0;
+    }
+
+    .insight-info {
+        margin: 5px 0;
+    }
+
+    #review-carousel {
+        margin-top: 10px;
+    }
+
+    .common-card {
+        margin-right: 10px;
+    }
+
+    #youtube-carousel img {
+        max-width: 250px;
+        height: 150px;
+    }
+
+    #review-carousel .common-card {
+        padding: 15px;
+        padding-bottom: 40px;
+        max-width: 300px;
+    }
+
+    .specialities .h-center {
+        margin-top: 20px;
+    }
+
+    .meet-doctors-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meet-doctors-first {
+        align-items: center;
+    }
+
+    .services .service-card {
+        min-height: 100px;
+    }
+
+    .modal-content-custom {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .services .service-card-outer {
+        width: calc(50% - 10px);
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .achievement img {
+        max-width: 100%;
+    }
+
+    .opinions-img {
+        height: 150px;
+    }
+
+    .modal-content-custom {
+        width: 85%;
+        height: 250px;
+    }
+
+    .opinion-img {
+        height: 175px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .services {
+        justify-content: center;
+    }
+
+    .services .service-card-outer {
+        width: 100%;
+    }
+
+    .insight-img {
+        height: 150px;
+    }
+}

@@ -1,0 +1,3296 @@
+@font-face {
+  font-family: 'Google Sans';
+  /* font-weight: 100; */
+  /* font-style: normal; */
+  src: url('../site/pages/KneeReplacement/assets/fonts/GoogleSans-Regular.ttf') format('truetype'),
+    /* url('fonts/PublicSans-Regular.woff') format('woff'),
+         url('fonts/PublicSans-Regular.ttf') format('truetype'); */
+}
+
+:root {
+
+  --btn-color: #134A85;
+
+  --blue-text: #134A85;
+
+  --btn-textcolor: white;
+
+  --font-sans: Google Sans;
+
+  --bg-color: #F1F8ED;
+
+  --btn-borderBlue: 1px solid #134A85;
+
+  --text-blackcolor: black;
+
+  --advantages-bg: #FFF0E0;
+
+  --advantages-bg2: #DBFFDC;
+
+  --bg-linear: linear-gradient(270deg, #FFEDD9 0%, rgba(255, 237, 217, 0) 100%);
+
+  --bg-linear2: linear-gradient(90deg, #D9FFDA 0%, rgba(217, 255, 218, 0) 100%);
+
+  --bg-lightblue: #E9F4FF
+}
+
+
+.topSpaceOnly {
+  padding-top: 50px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+/* common padding css */
+
+.me {
+  margin-right: 5px;
+}
+
+.topSpacing {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: fit-content;
+}
+
+/* #stagesCarousel {
+  display: none;
+} */
+
+.toast {
+  background-color: rgb(255 255 255 / 100%) !important;
+}
+
+/*  */
+
+#header1 .navbar-white .navbar-nav .nav-item .nav-link {
+  color: var(--bs-white);
+}
+
+#header1 .navbar-nav .nav-link:hover,
+#header1 .navbar-nav .nav-link.active,
+#header1 .navbar-nav .nav-item .nav-link:hover,
+#header1 .navbar-nav .nav-item .nav-link.active {
+  color: var(--blue-text);
+}
+
+#header1 .nav-link {
+  color: black;
+}
+
+
+/* .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+  } */
+
+/* .sticky-top.navbar-white .navbar-brand img {
+    max-height: 45px;
+  } */
+
+
+.navbar-nav .BAAbtn {
+  width: 170px;
+  color: white !important;
+}
+
+.BAAbtn:hover,
+.heroSubmitBtn:hover {
+  background-color: white;
+  border: var(--btn-borderBlue);
+  color: var(--blue-text) !important;
+}
+
+/*** Navbar End ***/
+
+body {
+  font-family: var(--font-sans);
+}
+
+.main-content {
+  margin-top: 60px;
+  /* Dynamically adjusted in JavaScript */
+}
+
+p,
+ul,
+li {
+  font-size: 14px;
+}
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+p,
+
+a,
+
+span,
+
+li {
+
+  font-family: var(--font-sans);
+
+  /* color: var(--text-blackcolor); */
+
+}
+
+
+
+button,
+
+input {
+
+  font-family: var(--font-sans);
+
+
+
+}
+
+
+
+input,
+
+input::placeholder,
+select {
+  color: #FFFFFF;
+
+  font-size: 14px !important;
+
+}
+
+#appointment select {
+  padding: 10px;
+}
+
+
+
+h3 {
+
+  font-weight: 600;
+
+}
+
+/* header */
+
+#header1 {
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .15) !important;
+  /* position: fixed; */
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+  animation: header .3s linear;
+
+}
+
+.custom-btn {
+
+  display: block;
+
+  /* background-color: var(--btn-color); */
+  background: var(--dark-blue-gradient);
+
+  color: var(--btn-textcolor) !important;
+
+  border-radius: 7px;
+
+  border: 1px solid transparent;
+
+  padding: 12px 21px 12px 21px;
+
+  white-space: nowrap;
+
+}
+
+.custom-btn span {
+  color: var(--btn-textcolor);
+  /* font-size: inherit; */
+}
+
+
+
+
+
+#header1 .navbar-light .navbar-nav .nav-link {
+
+  color: var(--text-blackcolor);
+
+}
+
+
+
+a {
+
+
+
+  font-family: var(--font-sans);
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 19.08px;
+
+  text-align: center;
+
+  padding: 0;
+
+  margin: 0;
+
+  text-decoration: none !important;
+
+
+
+}
+
+
+
+a:hover {
+
+  color: white;
+
+}
+
+
+
+.customA {
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+}
+
+
+
+/* .margin0 {
+  
+    padding: 0;
+  
+    margin: 0;
+  
+  } */
+
+
+
+.enquiryForm p {
+
+  font-weight: 800;
+
+  font-size: 17px;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+.blueclr {
+
+  color: var(--blue-text);
+
+}
+
+.fs-inherit {
+  font-size: inherit;
+}
+
+.fw-inherit {
+  font-weight: inherit;
+}
+
+/* navbar css */
+/* Mobile Styles */
+
+
+.padding-5 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.headerDiv {
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Style for the active nav-link */
+/* .nav-link.active {
+      color: var(--blue-text) !important;
+  } */
+
+#header1 .navbar-nav {
+
+  gap: 10px;
+  align-items: center;
+}
+
+.navPhone {
+  height: 20px;
+  margin-right: 8px;
+}
+
+@media (max-width: 1024px) {
+  .logowebp {
+
+    width: 180px !important;
+    height: auto !important;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .logowebp {
+
+    width: 250px !important;
+    height: auto !important;
+
+  }
+}
+
+@media (max-width: 768px) {
+  #appointment {
+    padding-top: 0;
+  }
+
+  .topSpaceOnly {
+    padding-top: 0;
+  }
+
+  .logowebp {
+
+    width: 70%;
+
+  }
+
+  .custom-btn {
+    padding: 15px 21px 15px 21px;
+    margin-right: 5px;
+  }
+
+  .headerDiv {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hideNumber {
+    display: none;
+  }
+
+  .navPhone {
+    margin-right: 0;
+  }
+
+}
+
+
+/* hero css */
+
+
+
+
+.hero-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-carousel .owl-dots {
+  display: none;
+}
+
+.custom-carousel-btn {
+  position: absolute;
+  top: 50%;
+  /* Vertically center the buttons */
+  transform: translateY(-50%);
+  color: white;
+  /* Set button text color to white */
+  background-color: transparent;
+  /* Optional background for visibility */
+  border: none;
+  font-size: 2rem;
+  /* Increase the size of the buttons */
+  z-index: 10;
+  padding: 10px;
+}
+
+.carouselDiv {
+  position: relative;
+}
+
+#home .owl-prev {
+  left: 20px;
+  /* Position the left button */
+}
+
+#home .owl-next {
+  right: 20px;
+  /* Position the right button */
+}
+
+
+#home input {
+
+  line-height: 2;
+
+  font-size: 14px;
+
+  color: #343434;
+
+  font-weight: 500;
+
+}
+
+
+
+#home input::placeholder {
+
+  font-size: 14px;
+
+  /* color: #343434; */
+
+}
+
+.brand-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.hero-section {
+
+  position: relative;
+
+  height: 85vh;
+
+  /* background: url('./images/banner.webp') no-repeat; */
+
+  background-size: 100%;
+
+}
+
+
+
+.hero-banner {
+
+  /* height: 100%; */
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  padding-bottom: 25px;
+
+  position: relative;
+  z-index: 10;
+
+}
+
+
+
+.heroSubmitBtn {
+
+  padding: 8px 21px 8px 21px;
+
+
+
+}
+
+
+
+.enquiryForm {
+
+  align-items: center;
+
+  background: #FFFFFF82;
+
+  /* Red background for the form */
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  gap: 10px;
+
+  width: 985px;
+
+}
+
+
+
+.form-wrapper {
+
+  background: #FFFFFF82;
+
+  /* Red background for the form */
+
+  border-radius: 10px;
+
+  padding: 10px;
+
+  width: 80%;
+
+  max-width: 900px;
+
+  display: flex;
+
+}
+
+@media (min-width: 1124px) {
+
+  .enquiryForm {
+    position: relative;
+    bottom: 105px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .mainDivForm {
+    height: 0;
+  }
+}
+
+
+@media (max-width: 1124px) {
+
+  .mainDivForm {
+
+    width: 100%;
+
+  }
+
+  .heroSubmitBtn {
+    display: initial;
+  }
+
+  .hero-banner {
+    padding-bottom: 0px;
+  }
+
+
+  .enquiryForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px 0px 15px;
+
+  }
+
+  .enquiryForm>div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .enquiryForm .me-2 {
+    margin-right: 0 !important;
+  }
+
+  .form-container {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .ms-3 {
+    margin-left: 5px;
+  }
+
+  #comparision .card-title {
+    margin-left: 5px;
+
+  }
+
+}
+
+
+
+@media (max-width: 1124px) {
+
+  .hero-section {
+
+    background-size: 110%;
+
+    height: 65vh;
+
+  }
+
+}
+
+
+
+/* about */
+@media (min-width: 992px) {
+
+  #about .colCustom,
+  #locations .col-lg-2 {
+    width: 20%;
+  }
+}
+
+#about .custom-btn {
+
+  width: 195px;
+
+  font-weight: 500;
+
+}
+
+#about .topSpacing {
+  padding-bottom: 0;
+}
+
+.feature-item p {
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: var(--blue-text);
+
+}
+
+
+
+/*  */
+
+/* services css */
+
+.card-title {
+
+  font-weight: 600;
+
+}
+
+
+
+#services {
+
+  background: var(--bg-color);
+
+}
+
+#services .col-md-6 {
+  display: flex;
+}
+
+#services .card {
+
+  border-radius: 10px;
+
+  border: 0;
+
+  padding: 10px;
+  /* min-height: 265px; */
+}
+
+
+
+#services .iconBlue {
+  height: 19px;
+}
+
+#services .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productBorders {
+
+  border-radius: 10px;
+
+  padding: 9px;
+
+}
+
+
+
+.leftImg {
+  width: 50%;
+}
+
+
+#services .custom-btn {
+
+  padding: 10px 16px 10px 16px;
+
+  width: 195px;
+
+}
+
+
+
+@media (max-width:1124px) {
+
+  .card-body {
+
+    width: 50%;
+
+
+
+  }
+
+
+
+  .card-body h5 {
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+  }
+
+  #locations .card-body h5,
+  #doctors .card-body h5 {
+
+    text-align: left;
+
+    font-size: 0.9rem;
+
+  }
+
+
+
+  .card-body p {
+
+    text-align: center;
+
+    font-size: 0.8rem;
+
+  }
+
+  #doctors .card-body p {
+
+    text-align: left;
+
+    font-size: 0.8rem;
+
+  }
+
+
+
+  #services .custom-btn {
+
+    padding: 5px 5px 5px 5px;
+
+    /* width: 195px; */
+
+    width: 100%;
+
+    font-size: 0.6rem;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Tab Styling */
+
+
+
+.roboticspacing {
+
+  padding-top: 15px;
+
+}
+
+
+
+.custom-tab {
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: 15px;
+
+}
+
+
+
+@media (max-width:1124px) {
+
+  .custom-tab a {
+
+    width: 70px;
+
+    font-size: 8px;
+
+  }
+
+}
+
+/* benefits */
+
+
+#benefits li.nav-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* #benefits li.nav-item */
+
+.custom-tab .nav-link {
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  font-weight: 600;
+
+  color: var(--blue-text);
+
+  height: 100%;
+
+  /* Default text color */
+
+  text-align: center;
+
+  line-height: 18.08px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/* Active Tab with Dynamic Colors */
+
+.custom-tab .nav-link.active {
+
+  color: var(--blue-text);
+
+  /* padding-bottom: 33px; */
+  /* padding-bottom: calc( + 12px); */
+  height: calc(100% + 16px);
+
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+/* Individual Tab Backgrounds */
+
+.custom-tab .nav-link.light-blue-tab {
+
+  background-color: #D9EBFF;
+
+  /* Light Blue */
+
+}
+
+.accordion .accordion-item .acc1 {
+  background-color: #D9EBFF;
+
+  color: var(--blue-text);
+
+}
+
+.accordion .accordion-item .acc2 {
+  /* background-color: var(--btn-color); */
+  background: var(--dark-blue-gradient);
+
+  color: #fff;
+
+}
+
+.accordion .accordion-item .acc3 {
+  background-color: #FFEDD9;
+
+  color: var(--blue-text);
+
+}
+
+.accordion .accordion-item .acc4 {
+
+  background-color: #FFD9FE;
+
+  color: var(--blue-text);
+}
+
+.custom-tab .nav-link.dark-blue-tab {
+
+  /* background-color: var(--btn-color); */
+  background: var(--dark-blue-gradient);
+
+  /* Dark Blue */
+
+  color: #fff;
+
+}
+
+
+
+.custom-tab .nav-link.peach-tab {
+
+  background-color: #FFEDD9;
+
+  /* Light Peach */
+
+}
+
+
+
+.custom-tab .nav-link.pink-tab {
+
+  background-color: #FFD9FE;
+
+  /* Light Pink */
+
+}
+
+
+
+/* Background changes for tab content */
+
+.tab-content.light-blue-bg {
+
+  background-color: #D9EBFF;
+
+  color: var(--blue-text);
+
+}
+
+
+
+.tab-content.dark-blue-bg {
+
+  /* background-color: var(--btn-color); */
+  background: var(--dark-blue-gradient);
+
+  color: #fff;
+
+}
+
+
+
+.tab-content.peach-bg {
+
+  background-color: #FFEDD9;
+
+  color: var(--blue-text);
+
+}
+
+
+
+.tab-content.pink-bg {
+
+  background-color: #FFD9FE;
+
+  color: var(--blue-text);
+
+}
+
+
+
+/* General Tab Content Styling */
+
+.tab-content {
+
+  padding: 30px;
+
+  border-radius: 0.5rem;
+
+  transition: border-radius 0.3s ease;
+
+}
+
+
+
+/* First Tab and Last Tab Active Styles */
+
+.first-active {
+
+  border-radius: 1px 1px 10px 10px !important;
+
+}
+
+
+
+.last-active {
+
+  border-radius: 1px 1px 10px 10px !important;
+
+}
+
+
+
+.light-blue-bg {
+
+  border-radius: 0px 10px 10px 10px;
+
+}
+
+
+
+.pink-bg {
+
+  border-radius: 10px 10px 10px 0px;
+
+}
+
+
+
+/* our doctors carousel */
+
+#doctors {
+
+  background-color: var(--bg-lightblue);
+
+}
+
+#doctors .swiper-slide {
+  height: auto;
+}
+
+#doctors .containerCustom {
+  padding-left: 225px;
+  padding-right: 225px;
+}
+
+#doctors .card:hover {
+  transform: unset !important;
+}
+
+#doctors .card {
+  height: 100%;
+  position: relative;
+  box-shadow: none;
+
+  /* Required for absolute positioning of the button */
+
+  overflow: hidden;
+
+  /* Prevent overflow of button */
+
+  padding: 8px;
+
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+
+}
+
+#doctors .swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+#doctors .swiper-pagination {
+  bottom: -5px;
+}
+
+#doctors .card img {
+
+  max-width: 100%;
+  width: 100%;
+
+  height: 200px;
+
+  /* Set a fixed height for consistency */
+
+  object-fit: cover;
+
+  /* Ensure image covers the space */
+
+  border-radius: 6px;
+
+  border-radius: 10px;
+
+  border: 0;
+
+  object-position: top;
+
+}
+
+
+
+#doctors .btn-profile {
+
+  position: absolute;
+
+  bottom: 115px;
+
+  /* Positioning the button at the bottom of the image */
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: none;
+
+  /* Initially hidden */
+
+  background-color: var(--btn-color);
+
+  /* Semi-transparent background */
+
+  color: white;
+
+  /* Button text color */
+
+  border: none;
+
+  /* No border */
+
+  padding: 12px 46px 12px 46px;
+
+  /* transition: opacity 0.4s ease, background-color 0.4s ease; Add transition effect */
+
+  transition: background-color 0.5s ease, color 0.5s ease
+}
+
+
+
+#doctors .card:hover {
+
+  border: 1px solid var(--btn-color);
+
+}
+
+
+
+#doctors .card:hover .btn-profile {
+
+  display: block;
+
+  /* Show on hover */
+
+}
+
+
+
+.carousel-inner {
+
+  padding: 1em;
+
+}
+
+
+
+#doctors .owl-dots {
+
+  padding-top: 10px;
+
+}
+
+
+
+#doctors .owl-dots .owl-dot {
+
+  background: transparent;
+
+  border-radius: 50%;
+
+  margin: 5px;
+
+  width: 12px;
+
+  height: 12px;
+
+}
+
+
+
+#doctors .owl-theme .owl-dots .owl-dot.active span {
+
+  background: var(--blue-text);
+
+  height: 6px;
+
+  width: 14px;
+
+}
+
+
+
+#doctors .owl-theme .owl-dots .owl-dot span {
+
+  width: 6px;
+
+  height: 7px;
+
+  /* background: black !important; */
+
+
+
+}
+
+
+
+/* Owl nav container for positioning prev and next buttons */
+
+/* #doctors .owl-nav button:focus {
+  
+    outline: 0;
+  
+  } */
+
+
+
+#doctors .owl-nav {
+
+  /* position: absolute;
+  
+    top: 20%;
+  
+    width: 100%; */
+
+  display: none;
+
+  /* justify-content: space-between;
+  
+    transform: translateY(-50%);
+  
+    pointer-events: nmone; */
+
+  /* Make the nav buttons appear over the content */
+
+}
+
+
+
+
+
+
+
+/* #doctors .owl-theme .owl-nav [class*=owl-]:hover {
+  
+    background: transparent !important;
+  
+    color: black !important;
+  
+  } */
+
+
+
+
+
+/* #doctors .owl-nav button {
+  
+    background-color: transparent;
+  
+    border-radius: 50%;
+  
+    border: none;
+  
+    padding: 10px;
+  
+    width: 40px;
+  
+    height: 40px;
+  
+    pointer-events: all;
+  
+  
+    font-size: 2em !important;
+  
+  
+  
+  } */
+
+
+
+/* Position the prev button exactly on the left of the image */
+
+/* #doctors .owl-nav .owl-prev {
+  
+    position: absolute;
+  
+    left: -45px;
+  
+  
+  
+  
+  
+  } */
+
+
+
+/* Position the next button exactly on the right of the image */
+
+/* #doctors .owl-nav .owl-next {
+  
+    position: absolute;
+  
+    right: -45px;
+  
+  
+  
+  } */
+
+.doctorBtnMobile {
+  display: none;
+}
+
+@media (max-width:1124px) {
+
+  /* #doctors .owl-nav .owl-prev {
+  
+      left: 2px;
+  
+    } */
+
+  #doctors .card-body {
+
+    width: 100%;
+
+
+
+  }
+
+  /* #doctors .owl-nav .owl-next {
+  
+      right: 2px;
+  
+    } */
+
+  .doctorBtnMobile {
+    display: block;
+  }
+
+  #doctors .card:hover .btn-profile {
+
+    display: none;
+
+    /* Show on hover */
+
+  }
+
+}
+
+
+
+/* Disabled button style */
+
+/* #doctors .owl-nav .owl-prev.disabled,
+  
+  #doctors .owl-nav .owl-next.disabled {
+  
+    opacity: 0.3;
+  
+    pointer-events: none;
+  
+  } */
+
+
+
+
+
+/* advantages */
+
+
+
+
+
+#advantages .card1 {
+
+  border-radius: 10px;
+
+  border: 0;
+
+  background: var(--advantages-bg);
+
+  padding: 30px;
+  width: 100%;
+  /* height: 100%; */
+
+}
+
+#advantages .gapDiv {
+  gap: 90px;
+}
+
+
+
+
+#advantages .card2 {
+
+  border-radius: 10px;
+
+  border: 0;
+
+  background: var(--advantages-bg2);
+
+  width: 100%;
+
+  padding: 30px;
+
+}
+
+
+
+#advantages .card p {
+
+  font-weight: 500;
+
+}
+
+
+
+/* youtube carousel */
+
+.owl-carousel .item iframe {
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+
+
+/* stages */
+
+#stages {
+  padding-bottom: 50px;
+}
+
+#stages {
+  padding-left: 153px;
+  padding-right: 153px;
+}
+
+#stagesCarousel .owl-carousel {
+  flex-direction: column !important;
+}
+
+
+/* Reduce the size of the images in the carousel */
+.stageimg {
+
+  height: 240px;
+  margin: 0 auto;
+  width: 163px;
+}
+
+#stagesCarousel .swiper-slide img {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  width: auto !important;
+
+}
+
+
+
+.stage {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+.stage-number {
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
+}
+
+
+
+.stage-text {
+
+  font-size: 19px;
+
+  font-weight: 800;
+
+  color: var(--blue-text);
+  /* padding: 0px 14px 0px 14px; */
+
+}
+
+.text1 {
+  padding: 0px 15px 0px 15px
+}
+
+.text2 {
+  padding: 0px 10px 0px 10px
+}
+
+#stagesCarousel .swiper-pagination {
+
+  padding-top: 10px;
+
+}
+
+
+
+.video-carousel-containerCustom .swiper-pagination .swiper-pagination-bullet,
+#doctors .swiper-pagination .swiper-pagination-bullet,
+#stagesCarousel .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 50%;
+  margin: 5px;
+  height: 6px !important;
+  width: 6px !important;
+}
+
+.video-carousel-containerCustom .swiper-pagination-bullet.swiper-pagination-bullet-active,
+#doctors .swiper-pagination-bullet.swiper-pagination-bullet-active,
+#stagesCarousel .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--blue-text) !important;
+  height: 6px !important;
+  width: 23px !important;
+  border-radius: 16px !important;
+}
+
+#stagesCarousel .owl-theme .owl-dots .owl-dot.active {
+
+  margin-right: 10px;
+}
+
+#stagesCarousel .owl-theme .owl-dots .owl-dot.active span {
+
+  background: var(--blue-text);
+
+  height: 6px;
+
+  width: 14px;
+
+}
+
+
+
+#stagesCarousel .owl-theme .owl-dots .owl-dot span {
+
+  width: 6px;
+
+  height: 7px;
+
+  /* background: black !important; */
+
+
+
+}
+
+
+
+/* Owl nav container for positioning prev and next buttons */
+
+#stagesCarousel .owl-nav button:focus {
+
+  outline: 0;
+
+}
+
+
+
+#stagesCarousel .owl-nav {
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 100%;
+
+  display: none;
+
+  justify-content: space-between;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+
+  /* Make the nav buttons appear over the content */
+
+}
+
+
+
+/* #stagesCarousel .owl-theme .owl-nav {
+  
+    margin-top: -50px !important;
+  
+  
+  
+  } */
+
+
+
+/* #stagesCarousel .owl-theme .owl-nav [class*=owl-]:hover {
+  
+    background: transparent !important;
+  
+    color: black !important;
+  
+  } */
+
+
+
+
+
+/* #stagesCarousel .owl-nav button {
+  
+    background-color: transparent;
+  
+    border-radius: 50%;
+  
+    border: none;
+  
+    padding: 10px;
+  
+    width: 40px;
+  
+    height: 40px;
+  
+    pointer-events: all;
+  
+  
+  
+    font-size: 2em !important;
+  
+  
+  
+  } */
+
+
+
+/* Position the prev button exactly on the left of the image */
+
+/* #stagesCarousel .owl-nav .owl-prev {
+  
+    position: absolute;
+  
+    left: -45px;
+  
+  
+  
+  
+  
+  } */
+
+
+
+/* Position the next button exactly on the right of the image */
+
+/* #stagesCarousel .owl-nav .owl-next {
+  
+    position: absolute;
+  
+    right: -45px;
+  
+  
+  
+  } */
+
+
+
+/* @media (max-width:1124px) {
+  
+    #stagesCarousel .owl-nav .owl-prev {
+  
+      left: 2px;
+  
+    }
+  
+  
+  
+    #stagesCarousel .owl-nav .owl-next {
+  
+      right: 2px;
+  
+    }
+  
+  } */
+
+
+
+/* Disabled button style */
+
+/* #doctors .owl-nav .owl-prev.disabled,
+  
+  #doctors .owl-nav .owl-next.disabled {
+  
+    opacity: 0.3;
+  
+    pointer-events: none;
+  
+  } */
+
+
+/* Desktop view (grid) */
+
+@media (min-width: 1124px) {
+
+  #stagesCarousel .owl-carousel {
+
+    display: none;
+
+    /* Hide carousel on desktop */
+
+  }
+
+
+
+  .stage-grid {
+
+    display: flex;
+
+    gap: 82px;
+
+  }
+
+}
+
+
+
+/* Mobile view (carousel) */
+
+@media (max-width: 1124px) {
+
+  /* .stage-grid {
+
+    display: none;
+
+
+  } */
+
+}
+
+
+
+/* locations */
+
+
+
+#locations .card {
+
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+
+}
+
+#locations .card-body {
+  text-align: left;
+  padding-left: 0px;
+  width: 100%;
+
+}
+
+#locations .card-body h5 {
+  font-size: 18px;
+  color: #000;
+}
+
+#locations .card:hover {
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .15) !important;
+
+}
+
+#locations img {
+
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+
+  /* Set a fixed height for consistency */
+
+  object-fit: cover;
+
+  /* Ensure image covers the space */
+
+  border-radius: 6px;
+
+
+
+}
+
+
+
+body #locations .card-body a {
+
+  border-bottom: 1px solid var(--blue-text);
+  font-weight: 600;
+
+}
+
+
+
+#locations .card-body a:hover {
+
+  color: var(--blue-text);
+
+}
+
+
+
+/* youtube carousel */
+
+
+#youtube .owl-carousel .owl-stage {
+  display: flex;
+}
+
+#youtube .owl-carousel .item {
+
+  display: flex;
+
+  /* justify-content: center;
+  
+    align-items: center; */
+
+  height: auto;
+
+  /* Adjust height as needed */
+
+  padding: 10px;
+  height: 100%;
+
+}
+
+
+
+.video-carousel-container {
+
+  max-width: 100%;
+
+  margin: 20px auto;
+
+  /* Spacing between carousels */
+
+}
+
+
+#youtube .swiper-slide {
+  height: auto;
+}
+
+#youtube .card {
+
+  padding: 25px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  /* background-color: var(--bg-lightblue); */
+  background: var(--dark-blue-gradient);
+  align-items: flex-start;
+  margin-block: 5px;
+  height: 100%;
+}
+
+#youtube .card:hover,
+#locations .card:hover {
+  transform: unset !important;
+}
+
+
+
+#youtube .card-text {
+
+  text-align: left;
+
+}
+
+
+
+#youtube .card img {
+
+  width: 30px;
+
+  padding-bottom: 10px;
+
+}
+
+
+
+/* 
+  
+  #youtube .owl-item{
+  
+    width: 380px !important;
+  
+  } */
+
+
+
+/* YouTube iframe styles */
+
+#youtube .owl-carousel .item iframe {
+
+  width: 100%;
+
+  height: 225px;
+
+  /* Adjust height as needed */
+
+  border: none;
+
+  border-radius: 15px;
+
+}
+
+
+
+/* faq */
+
+#faq {
+
+  background: var(--bg-color);
+
+}
+
+
+
+.accordion-item {
+
+  margin-bottom: 14px;
+
+  border: 0;
+
+  border-radius: 10px !important;
+
+  overflow: hidden;
+
+}
+
+
+
+.accordion-button:not(.collapsed) {
+
+  color: inherit;
+
+  background-color: inherit;
+
+  box-shadow: none;
+
+}
+
+
+
+#faq .accordion-body {
+
+  background: var(--bg-color);
+
+}
+
+
+
+.accordion-button::after {
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+
+
+
+}
+
+
+
+.accordion-button:not(.collapsed)::after {
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+
+}
+
+
+
+/* end */
+
+
+
+/* comparision */
+
+#comparision .imgCompare {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#comparision p {
+  font-weight: 500;
+}
+
+#comparision .card1 {
+  width: 100%;
+
+  border-radius: 10px;
+
+  border: 0;
+
+  /* background-color: ; */
+
+  background: var(--bg-linear);
+
+  padding: 30px 43px;
+
+
+
+}
+
+
+
+#comparision .card2 {
+
+  border-radius: 10px;
+
+  border: 0;
+
+  /* background-color: ; */
+
+  background: var(--bg-linear2);
+
+  padding: 30px 43px;
+  width: 100%;
+
+
+}
+
+
+
+/* counter */
+
+#counter .card,
+#appointment .card {
+  width: unset;
+  height: unset;
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
+  box-shadow: unset;
+  transition: unset;
+  overflow: unset;
+  display: unset;
+  flex-direction: unset;
+  align-items: unset;
+  padding: unset;
+  text-align: unset;
+  justify-content: unset;
+}
+
+#counter .card:hover,
+#appointment .card:hover {
+  transform: unset !important;
+}
+
+#counter p {
+
+  font-size: 18px;
+
+  margin-bottom: 0;
+
+  font-weight: 600;
+  color: #134A85;
+
+}
+
+#counter p span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: #134A85;
+
+}
+
+#counter .flexCounter {
+  display: flex;
+  align-items: center;
+}
+
+#counter .card {
+
+  border-radius: 15px;
+
+  padding: 17px 0px 17px 9px;
+
+  border: 0;
+
+}
+
+
+
+#counter .card4 {
+
+
+
+  padding: 17px 40px 17px 40px;
+
+}
+
+
+
+/* #counter img {
+  
+    height: 50px;
+  
+  } */
+
+
+
+
+
+#counter .counterC:nth-child(1) .card {
+
+  background-color: #FFD9FE;
+
+  /* Color for the first card */
+
+}
+
+
+
+#counter .counterC:nth-child(2) .card {
+
+  background-color: #D9EBFF;
+
+  /* Color for the second card */
+
+}
+
+
+
+#counter .counterC:nth-child(3) .card {
+
+  background-color: #DED9FF;
+
+  /* Color for the third card */
+
+}
+
+
+
+#counter .counterC:nth-child(4) .card {
+
+  background-color: #FFF2E3;
+
+  /* Color for the third card */
+
+}
+
+
+
+@media (max-width:1124px) {
+
+  #counter .card {
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+  /* #counter .card img {
+  
+      width: 20%;
+  
+  
+  
+    } */
+
+
+
+  #counter .card4 {
+
+    padding: 17px 40px 17px 10px;
+
+  }
+
+}
+
+
+
+/* appointment */
+
+
+
+#appointment .card {
+
+  padding: 44px 75px 44px 285px;
+
+  /* background: var(--btn-color); */
+  background: var(--dark-blue-gradient);
+  border: 0;
+
+  border-radius: 20px;
+  display: block;
+
+}
+
+
+
+@media (max-width:1124px) {
+
+  #appointment .card {
+
+    padding: 5vh 5vh 5vh 5vh;
+
+  }
+
+}
+
+
+
+#appointment h3 {
+
+  font-weight: 500;
+
+}
+
+
+
+#appointment h5 {
+
+  font-weight: 700;
+
+}
+
+
+
+#appointment .custom-btn {
+
+  width: 100%;
+
+  color: var(--text-blackcolor) !important;
+
+  background: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  padding: 9px 21px 9px 21px;
+
+}
+
+
+
+#appointment input,
+
+#appointment select {
+
+  background-color: transparent;
+
+  color: white;
+
+  border-radius: 6px;
+
+  border: 1px solid white;
+
+  padding: 8px;
+
+}
+
+
+
+#appointment input::placeholder {
+
+  /* color: rgb(172, 168, 168); */
+  color: #FFFFFF;
+  opacity: 0.5;
+  /* font-size: 14px; */
+}
+
+
+
+.serveIn {
+
+  padding-left: 226px;
+
+}
+
+
+
+.list {
+
+  gap: 45px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+
+/* footer */
+
+
+
+.footer a {
+
+  color: black;
+
+  /* text-decoration: underline !important; */
+
+
+
+}
+
+
+
+.hatsoff {
+
+  border-bottom: 1px solid black;
+
+  font-weight: bolder;
+
+}
+
+
+
+.footer a:hover {
+
+  color: black;
+
+}
+
+
+
+.footer {
+
+  position: relative;
+
+  display: block;
+
+}
+
+.footerRow {
+  position: relative;
+}
+
+.footerImg img {
+  object-fit: unset;
+  position: absolute;
+  z-index: 10;
+  top: -75px;
+  width: 434px;
+  /* height: 615px; */
+  height: 540px;
+
+}
+
+.footer a {
+  position: relative;
+  z-index: 10;
+}
+
+/* .footer::after {
+  
+    content: '';
+  
+    position: absolute;
+  
+    background-image: url(images/pain.webp);
+  
+    background-repeat: no-repeat;
+  
+    background-size: 100%;
+  
+    background-position: left;
+  
+    bottom: 52px;
+  
+    right: 0;
+  
+    left: 95px;
+  
+    height: 600px;
+  
+    width: 460px;
+  
+    z-index: 0;
+  
+  } */
+
+
+.knee-rplc-loc h2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  body .containerCustom {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  body .containerCustom {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  body .topSpacing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  #comparision .card2 {
+    background: var(--advantages-bg2);
+  }
+
+  #comparision .card1 {
+    background: var(--advantages-bg);
+  }
+
+  #advantages .card1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .containerCustom {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  body .topSpacing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #about .col-md-4 img {
+    width: 100%;
+  }
+
+  #comparision .card2 {
+    background: var(--advantages-bg2);
+  }
+
+  #comparision .card1 {
+    background: var(--advantages-bg);
+  }
+
+
+
+  #comparision .card-title {
+    padding-bottom: 15px;
+  }
+
+  #advantages .gapDiv {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #comparision .card2,
+  #comparision .card1,
+  #advantages .card1,
+  #advantages .card2,
+  #appointment .card {
+    padding: 30px 15px;
+  }
+
+
+  #comparision .imgCompare {
+    width: 100%;
+  }
+
+  #counter img {
+
+    max-width: 100%;
+    width: auto;
+
+  }
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .leftImg {
+    width: 44%;
+  }
+
+  #header1 .custom-btn {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width:1124px) {
+
+  /* .footer::after {
+  
+      display: none;
+  
+      width: 120px;
+  
+      z-index: 0;
+  
+      top: -1000px;
+  
+      left: 20px;
+  
+    } */
+
+  .footerImg img {
+    display: none;
+  }
+
+
+  .serveIn {
+
+    width: 100%;
+
+    margin: auto;
+
+    padding-left: 10px;
+
+  }
+
+
+
+  .serveIn h5 {
+
+    text-align: center;
+
+  }
+
+
+
+  .list {
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    font-size: 14px;
+
+    padding-left: 0px;
+
+  }
+
+
+
+  .location-res {
+
+    padding-left: 15px;
+    /* padding-left: 40px; */
+
+    /* padding-right: 40px; */
+    padding-right: 15px;
+
+  }
+
+}
+
+
+
+/* footer*/
+
+
+
+.footer {
+
+  background: var(--bg-lightblue);
+
+  color: black;
+
+  padding: 15px 50px 15px 50px;
+
+  z-index: 10;
+
+}
+
+
+
+.footer #checking a {
+
+  font-weight: 500;
+
+  color: black;
+
+  text-decoration: underline;
+
+}
+
+/*  */
+
+/* common hover effects */
+.phoneHover:hover span {
+  color: var(--blue-text) !important;
+}
+
+.phoneHover:hover {
+
+  background-color: white !important;
+
+  border: var(--btn-borderBlue) !important;
+
+  color: var(--blue-text) !important;
+
+}
+
+#doctors .phoneHover:hover {
+
+  background-color: white;
+
+  outline: var(--btn-borderBlue);
+
+  color: var(--blue-text);
+
+}
+
+.colorInverse {
+
+  background-color: white;
+
+  border: var(--btn-borderBlue);
+
+  color: var(--blue-text) !important;
+
+  font-weight: 600;
+
+}
+
+
+
+.colorInverse:hover {
+
+  background-color: var(--btn-color) !important;
+
+  /* border: var(--btn-borderBlue); */
+
+  color: white !important;
+
+
+
+}
+
+/*  */
+
+/* benefits */
+
+/* #benefits li{
+    width: 100%;
+  } */
+
+#benefits,
+#advantages {
+  padding-bottom: 0;
+}
+
+.yt-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media (min-width:992px) and (max-width:1124px) {
+
+  /* #benefits li{
+    width: 100%;
+  } */
+  #benefits a {
+    width: 100%;
+    font-size: 14px;
+    /* font-family: var(--font-sans); */
+  }
+
+  .footerImg {
+    display: none;
+  }
+
+  .enquiryForm {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+
+
+
+@media (max-width:1124px) {
+
+  .mb-0 {
+
+    text-align: center;
+
+  }
+
+  .text-end {
+
+    text-align: center !important;
+
+  }
+
+
+
+}
+
+/*  */
+
+/* media queries */
+
+
+
+@media (min-width: 1124px) {
+
+  .wide-input {
+
+    width: 100%;
+
+    max-width: 400px;
+
+  }
+
+
+
+  .logowebp {
+
+    height: 46px;
+
+  }
+
+  #advantages .card {
+    min-height: 248px;
+  }
+
+}
+
+
+@media (max-width: 991.98px) {
+  .logowebp {
+    width: 70%;
+
+  }
+
+  .padding-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .outside {
+    display: none !important;
+  }
+
+  .inside {
+    display: block;
+  }
+
+  #header1 .navbar .d-flex.align-items-center.w-100 {
+    justify-content: space-between;
+  }
+
+  #header1 .sticky-top.navbar-light {
+    position: relative;
+    background: var(--bs-white);
+  }
+
+  #header1 .navbar.navbar-expand-lg .navbar-toggler {
+    /* padding: 10px 20px; */
+    border: 1px solid var(--bs-dark);
+    color: var(--bs-dark);
+    padding: 15px 21px 15px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  #header1 .navbar-light .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+  }
+
+  #header1 .navbar-light .navbar-nav .nav-link,
+  #header1 .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+    margin-left: 0;
+    color: var(--bs-dark);
+  }
+
+  #header1 .navbar-light .navbar-nav .nav-item .nav-link {
+    color: var(--bs-dark);
+  }
+
+  #header1 .navbar-light .navbar-brand img {
+    max-height: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .inside {
+    display: none !important;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .bigBanner {
+    display: none !important;
+  }
+
+  .smallBanner {
+    display: block !important;
+  }
+
+  .navDiv {
+    width: 100%;
+  }
+
+  .negativeTop {
+    margin-top: -10px;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .flexCounter {
+
+    display: flex;
+    align-items: center;
+
+  }
+
+
+}
+
+/* @media (min-width: 769px) and (max-width: 1124px) {
+    .navbar .d-flex.align-items-center {
+        justify-content: space-between;
+    }
+  
+    .navbar-collapse {
+        text-align: right;
+    }
+  
+    .custom-btn.customA {
+        margin-left: auto;
+    }
+  
+    .navbar-toggler {
+        margin-left: auto;
+    }
+  } */
+@media (max-width:992px) {
+
+  .navDiv {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .flex2 {
+    display: flex;
+  }
+
+  #stagesCarousel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #stages {
+    display: none;
+  }
+
+  .marginB {
+    margin-bottom: 15px;
+  }
+}
+
+
+#appointment .serveIn h5 {
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+}
+
+#appointment .location-res ul {
+  padding: 0;
+  margin: 0;
+  list-style: disc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#appointment .location-res ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--blue-text);
+}
+
+/* Adjust bullet point positioning for better appearance */
+#appointment .location-res ul li::marker {
+  /* color: #000; */
+}
+
+@media (min-width: 768px) {
+
+  .smallBanner {
+    display: none !important;
+  }
+
+  .bigBanner {
+    display: block !important;
+  }
+
+  #appointment .location-res ul li {
+    margin: 0 20px 10px 20px;
+
+  }
+
+
+}
+
+@media (min-width: 992px) {
+
+  #appointment .location-res {
+    /* padding-left: 135px; */
+    padding-left: 42px;
+
+  }
+}
+
+
+@media (min-width: 1468px) {
+
+  #benefits li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1124px) {
+  #appointment .location-res {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  #header1 .navbar-nav {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1349px) {
+
+  .location-res {
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #header1 .navbar-nav {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1500px) {
+
+  #header1 .navbar-nav {
+    gap: 23px;
+  }
+}
+
+/*  */
+#stages {
+  margin-bottom: 40px;
+}
+
+.stages-carousel {
+  display: none !important;
+}
+
+.stage-img {
+  position: relative;
+}
+
+.stages .row {
+  position: relative;
+}
+
+.stages .col-md-3 {
+  text-align: center;
+  position: relative;
+}
+
+.stages .col-md-3::before {
+  bottom: -225px;
+  position: relative;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 5px solid #ffffff;
+  outline: 2px solid var(--blue-text);
+  background-color: var(--blue-text);
+  border-radius: 50%;
+  display: inline-block;
+  left: -4%;
+}
+
+.stage-img img {
+  position: relative;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  height: 136px;
+  top: 7px;
+  width: 138px;
+  left: -11px;
+}
+
+.stage-img::before,
+.stage-img::after {
+  position: absolute;
+  content: "";
+}
+
+.stage-img::before {
+  background: url(../../public/images/stage-shape.webp);
+  height: 180px;
+  width: 170px;
+  top: 0;
+  left: 49.5%;
+  rotate: -1deg;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stage-img::after {
+  position: absolute;
+  height: 38px;
+  width: 2px;
+  bottom: -70px;
+  left: 45.5%;
+  z-index: -1;
+  border-left: 2px solid var(--blue-text);
+}
+
+.stages .line {
+  position: relative;
+  border: 1px solid var(--blue-text);
+  left: 0px;
+  width: 100%;
+  bottom: -235px;
+  transform: unset;
+}
+
+.stages .line::before,
+.stages .line::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: url("../../public/images/Arrow-lft.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+
+.stages .line::before {
+  left: -15px;
+}
+
+.stages .line::after {
+  right: -15px;
+  transform: scaleX(-1);
+  translate: 0 -10px;
+}
+
+.content-sec {
+  position: relative;
+
+  bottom: -100px;
+}
+
+
+@media (min-width: 992px) and (max-width:1124px) {
+
+  .stage-img::before {
+    left: 50.5%;
+  }
+
+
+  .stage-img img {
+    left: -10px;
+  }
+
+}
+
+
+@media (max-width:550px) {
+  .leftImg {
+    object-fit: contain;
+  }
+
+  #doctors .card img {
+    object-fit: contain;
+  }
+
+  #services .card {
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    padding: 15px;
+  }
+
+  #services .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width:1124px) {
+
+  #counter img {
+    height: 56px;
+  }
+
+  #appointment {
+    padding-top: 0;
+  }
+
+  #appointment .painImg {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+
+
+/* New css */
+
+.phone-icon-blue svg {
+  fill: #134A85;
+  width: 17px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.custom-btn:hover .phone-icon-blue svg {
+  fill: #fff;
+}
+
+.phone-icon svg {
+  width: 17px;
+  height: 20px;
+  margin-right: 5px;
+  fill: #134A85;
+}
+
+.custom-btn:hover .phone-icon svg {
+  fill: #fff;
+}
+
+.custom-btn-2 .phone-icon svg {
+  fill: #fff;
+}
+
+.custom-btn-2:hover .phone-icon svg {
+  fill: #134A85;
+}
+
+.section-ttl span {
+  color: #134A85;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+.green-tick {
+  position: relative;
+  list-style: none;
+}
+
+.green-tick::before {
+  position: absolute;
+  left: -20px;
+  content: "";
+  /* background-image: url(./images//tick.svg); */
+  width: 15px;
+  height: 15px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* .main-page-content :is(.button-primary.custom-select, button, input, select) {
+  height: unset;
+} */
+.knee-app-sec .footerRow input::placeholder {
+  color: #fff !important;
+}
+
+.knee-app-sec select option {
+  background-color: #134A85;
+  color: #fff;
+}
+
+#pills-dark-blue p,
+.acc2 p {
+  color: #fff;
+}
+
+.feature-item p {
+  margin-bottom: 0;
+}
+
+.error {
+  font-size: 13px;
+}
+
+.accordion .accordion-item .acc1,
+.accordion .accordion-item .acc2,
+.accordion .accordion-item .acc3 {
+  height: auto;
+}

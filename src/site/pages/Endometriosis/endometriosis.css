@@ -1,0 +1,1246 @@
+/* Header Section Starts */
+
+/* Header Section Ends */
+
+
+
+
+
+
+
+
+.header-section {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.consultations {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 21.8px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px 11px;
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.dropdown {
+    width: 200px;
+    height: 40px;
+    border-radius: 7.5px;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    padding: 11px 15px;
+}
+
+.search-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+.consultations {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.overview-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Orthopedic Care Section */
+.orthopedic-care-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #f3f9fb;
+    /* font-family: Arial, sans-serif; */
+    background-image: url('../../assets/images/common-bg.webp');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.tech-desc {
+    text-align: left;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 items per row */
+    gap: 30px;
+    width: 100%;
+    /* Use 100% width to fill available space */
+    max-width: 1200px;
+    /* Maximum width to prevent it from getting too wide */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+.treatment-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    padding: 9.5px 21px 9.5px 10px;
+    flex-direction: row;
+    /* Side-by-side image and content on large screens */
+    width: 592px;
+    height: 220px;
+}
+
+.image-container {
+    width: 230px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.treatment-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.treatment-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.know-more-link {
+    font-size: 15px;
+    color: #134A85;
+    font-weight: 500;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.orthopedic-procedures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    /* font-family: Arial, sans-serif; */
+}
+
+.procedures-grid {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.procedure-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: left;
+    /* flex: 1 1 30%;  */
+    /* width: 387px; */
+    height: 100%;
+}
+
+.procedure-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.procedure-card p {
+    margin-bottom: 0;
+}
+
+.procedure-card h3,
+.consultation-card h3,
+.technology-card h3,
+.expert-card h3 {
+    font-size: 18px;
+    color: #242424;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.consultation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 150px;
+    background-color: #ffffff;
+    /* font-family: Arial, sans-serif; */
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+
+.consultation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.consultation-card {
+    border-radius: 10px;
+    /* padding: 20px 0; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.consultation-image {
+    /* width: 156px;
+    height: 156px; */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.diagnosis-treatment {
+    padding: 0 150px;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.diagnosis-treatment::before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 300px;
+    /* background-image: url('../../../assets//images/Background01.png'); */
+    background-size: cover;
+    background-color: #ebf4ff;
+    background-blend-mode: overlay;
+    top: -20%;
+    left: 0;
+    opacity: 0.5;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 284px;
+    height: 275px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    flex: 9;
+}
+
+.card-content-1 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0 10px 0;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #134A85;
+    font-weight: 600;
+    text-align: left;
+}
+
+.card-number {
+    border-radius: 5px;
+    font-size: 18px;
+    color: #134a85;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+    background-color: #ebf4ff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.consultation-card p {
+    text-align: center;
+    /* width: 100%; */
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1450px) {
+    .search-bar .dropdown {
+        width: 156px;
+        height: 40px;
+        border-radius: 7.5px;
+        border: 1px solid #ccc;
+        min-width: 150px;
+        padding: 11px 15px;
+    }
+
+    .treatment-card {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* @media (max-width: 1200px) {
+    .col-xl-3 {
+      width: 25%;
+    }
+  } */
+
+@media (max-width: 992px) {
+    .search-bar .dropdown {
+        width: 100%;
+        height: 40px;
+        border-radius: 7.5px;
+        border: 1px solid #ccc;
+        min-width: 150px;
+        padding: 11px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .col-6 {
+      width: 50%;
+    } */
+}
+
+@media (max-width: 576px) {
+    /* .col-6 {
+      width: 100%;
+    } */
+}
+
+@media (max-width: 1200px) {
+    .diagnosis-treatment {
+        padding: 20px 40px;
+    }
+
+    .dropdown {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .search-bar {
+        justify-content: center;
+    }
+
+    /* .card {
+      width: calc(33.33% - 20px);
+    } */
+}
+
+@media screen and (max-width: 1250px) {
+    .overview-section {
+        margin: 0;
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* .card {
+      width: calc(50% - 20px);
+    } */
+
+    .diagnosis-treatment {
+        margin: 30px 0;
+        padding: 0px 10px;
+        height: 100%;
+    }
+
+    .diagnosis-treatment::before {
+        top: -4%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /* .card {
+      width: 100%;
+    } */
+
+    .card-title,
+    .card-number {
+        text-align: center;
+    }
+
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diagnosis-treatment h2 {
+        font-size: 22px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .consultation-section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* .consultation-image {
+      width: 60px;
+      height: 60px;
+    } */
+
+    .consultation-card h3 {
+        font-size: 16px;
+
+    }
+
+    .consultation-card p {
+        font-size: 13px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultation-section {
+        padding: 30px 10px;
+        height: 100%;
+        margin: 0;
+
+    }
+
+    .cards-container .card {
+        width: 85%;
+    }
+
+    .consultation-section h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    /* .consultation-image {
+      width: 50px;
+      height: 50px;
+    } */
+
+    .consultation-card h3 {
+        font-size: 14px;
+    }
+
+    .consultation-card p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .orthopedic-procedures h2 {
+        font-size: 20px;
+    }
+
+    .procedure-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .procedure-card h3 {
+        font-size: 16px;
+    }
+
+    .procedure-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orthopedic-procedures {
+        padding: 30px 10px;
+    }
+
+    .orthopedic-procedures h2 {
+        font-size: 18px;
+    }
+
+    .procedure-card {
+        flex: 1 1 100%;
+        /* 1 item per row on small screens */
+        max-width: 100%;
+    }
+
+    .procedure-card h3 {
+        font-size: 14px;
+    }
+
+    .procedure-card p {
+        font-size: 12px;
+    }
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #f9f4f0; */
+    background: url('../../assets//images/common-bg.webp');
+    background-color: #FFF3EA;
+    background-blend-mode: overlay;
+    /* font-family: Arial, sans-serif; */
+    text-align: center;
+    width: 100%;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.technology-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.technology-card p {
+    margin-bottom: 0;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.technologies h4 {
+    text-align: left;
+}
+
+.icon {
+    font-size: 40px;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.experts {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* Expert Card Styling */
+.expert-card {
+    position: relative;
+    background-color: white;
+    /* Keep the background white */
+    border-radius: 15px;
+    text-align: center;
+    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 403px;
+    width: 288px;
+    border: 1px solid #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Gradient border on hover */
+.expert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px;
+    /* Adjust to create a thin gradient border */
+    background: linear-gradient(315deg, #f6811f 0%, #4c586b 51.11%, #134a85 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Ensures hover effect doesn’t interfere with the card */
+}
+
+.expert-card:hover::before {
+    opacity: 1;
+    /* Show gradient border on hover */
+}
+
+.expert-card:hover {
+    transform: scale(1.05);
+}
+
+.expert-image-wrapper {
+    border-radius: 13px 13px 0 0;
+    overflow: hidden;
+}
+
+.expert-image {
+    width: 100%;
+    flex: 2;
+    object-fit: cover;
+}
+
+.expert-title {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-gutter {
+    --bs-gutter-y: 20px;
+    --bs-gutter-x: 20px;
+}
+
+img.journey-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+}
+
+.expert-card p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Button styling and animation */
+.expert-card button,
+.expert-card .ButtonPrimary {
+    background-color: #1a3c9b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -40px;
+    /* Initially hidden */
+    opacity: 0;
+    transition: bottom 0.4s ease, opacity 0.4s ease;
+}
+
+.expert-card:hover button,
+.expert-card:hover .ButtonPrimary {
+    bottom: 16px;
+    /* Slide up to be visible */
+    opacity: 1;
+}
+
+.expert-card:hover .text-title {
+    visibility: hidden;
+}
+
+.expert-card button:hover,
+.expert-card .ButtonPrimary:hover {
+    background-color: #143178;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.desktop-banner,
+.mobile-banner {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mobile-banner {
+    display: none;
+}
+
+/* meet-doctors sec  */
+
+.faq-container {
+    /* width: 100%; */
+    /* padding: 50px 150px; */
+    /* background: url('../../../assets/images/Background01.png'); */
+    background: url('../../assets/images/common-bg.webp');
+    background-color: #ebf4ff;
+    background-blend-mode: overlay;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #242424;
+    padding: 16px 25px;
+    background-color: #fff;
+    border-radius: 7.5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.faq-answer {
+    padding: 16px 25px;
+    color: #242424;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+}
+
+.faq-icon {
+    font-size: 1.2em;
+    color: #242424;
+    transition: transform 0.2s;
+    font-weight: 600;
+}
+
+.success-stories-custom {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+
+/* boa */
+.boaSection {
+    padding-bottom: 120px !important;
+}
+
+.boaDiv {
+    padding: 44px 75px 44px 285px;
+    background: var(--color-gradient);
+    border: 0;
+    border-radius: 20px;
+}
+
+.boaInput {
+    background-color: transparent;
+    color: white;
+    border-radius: 7.5px;
+    border: 1px solid white;
+    padding: 14px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    /* color: red; */
+}
+
+.boaBtn {
+    width: 100%;
+    color: black;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 21px 9px 21px;
+    border-radius: 7.5px;
+}
+
+.setImgDiv1 {
+    position: relative;
+}
+
+.setImgDiv1 img {
+    position: absolute;
+    height: 611px;
+    width: 340px;
+    transform: translateY(40%);
+    bottom: 115px;
+}
+
+.whiteText {
+    color: white;
+}
+
+.formDiv {
+    width: 80%;
+}
+
+/* expert */
+
+.expertDiv {
+    background-color: #EBF4FF;
+    padding: 71.5px 35px;
+    border-radius: 35px;
+    position: relative;
+    height: 100%;
+}
+
+.icon-container1 {
+    position: absolute;
+    overflow: hidden;
+    display: inline-flex;
+    margin-left: 6px;
+    background: var(--color-gradient);
+    transition: background-color 0.4s ease;
+    top: 0;
+    right: 0;
+    padding: 27px 19px;
+    /* width: 100px; */
+    /* height: 100px; */
+    z-index: 11;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+svg.corner-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(270deg);
+    height: 143px;
+    width: 143px;
+}
+
+.arrowExpert {
+    width: 50px;
+    height: 30px;
+}
+
+.content .section-left-heading {
+    width: 60%;
+    margin-bottom: 1rem;
+    color: #134A85;
+}
+
+.expertRightCard img {
+    width: 100%;
+}
+
+/* faq 2 */
+#faq {
+
+
+
+    background: var(--bg-color);
+
+
+
+}
+
+
+
+
+
+
+
+.accordion-item {
+
+
+
+    margin-bottom: 14px;
+
+
+
+    border: 0;
+
+
+
+    border-radius: 10px !important;
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.accordion-button:not(.collapsed) {
+
+
+
+    color: inherit;
+
+
+
+    background-color: inherit;
+
+
+
+    box-shadow: none;
+
+
+
+}
+
+
+
+
+.containerCustom {
+    background: #ebf4ff;
+
+}
+
+
+#faq .accordion-body {
+
+
+
+    background: #ebf4ff;
+
+
+
+}
+
+
+
+
+
+
+
+.accordion-button::after {
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+
+
+}
+
+
+
+
+
+
+
+.accordion-button:not(.collapsed)::after {
+
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+
+}
+
+/* footer css */
+/* Responsive Adjustments */
+/* FAQ, Why-Choose, Services, and Banner Adjustments */
+@media (max-width:1468) {
+    .counter1 {
+        top: 0;
+        right: 0;
+        background-color: #b9ccdd;
+        height: 142px;
+        width: 132px;
+    }
+}
+
+@media (max-width: 868px) {
+    .faq-container {
+        padding: 40px 20px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .faq-question,
+    .faq-answer {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .faq-icon {
+        font-size: 1em;
+    }
+
+    .expert-title h3,
+    .expert-title p {
+        display: none;
+    }
+
+    .experts {
+        padding: 0px 38px;
+        margin: 50px 0;
+    }
+
+    .technologies h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 36px;
+    }
+
+    .technology-card h3 {
+        font-size: 16px;
+    }
+
+    .technology-card p {
+        font-size: 13px;
+    }
+
+    .orthopedic-care-container {
+        padding: 30px 15px;
+    }
+
+    .center-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .treatment-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .treatment-card {
+        padding: 15px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .treatment-content {
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    .treatment-title {
+        font-size: 16px;
+    }
+
+    .treatment-description,
+    .know-more-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .faq-question,
+    .faq-answer {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .faq-icon {
+        font-size: 0.9em;
+    }
+
+    .center-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .technologies {
+        padding: 30px 10px;
+    }
+
+    .technologies h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+
+    .technology-card h3 {
+        font-size: 14px;
+    }
+
+    .technology-card p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .why-choose .main-img::before {
+        top: 40px;
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+/* my responsiveness */
+@media screen and (max-width: 991px) {
+    .setImgDiv1 {
+        display: none;
+    }
+
+    .setImgDiv2 {
+        width: 100%;
+    }
+
+    .boaDiv {
+        padding: 30px;
+    }
+
+    .boaSection {
+        padding-top: 0px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .boaDiv .formDiv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-right-sec {
+        display: block ;
+    }
+    .primaryBtnDiv{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.accordion-button {
+    height: unset !important;
+    /* border-radius: 5px; */
+}
+
+
+.error{
+    font-size: 13px;
+}
+
+footer {
+    background-color: #EBF4FF;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+

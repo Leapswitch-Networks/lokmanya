@@ -1,0 +1,67 @@
+#contactUsLok .tab-btn {
+    border: 1px solid var(--border-color);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    /* box-shadow: 0px 4px 8px 0px #24242429; */
+
+}
+
+
+#contactUsLok .tab-btn.active {
+
+    background: linear-gradient(#fff, #fff) padding-box, var(--color-gradient) border-box;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 8px 0px #24242429;
+}
+
+#contactUsLok .tab-btn:hover {
+    color: white;
+    /* background: linear-gradient(315deg, #F6811F 0%, #46566E 51.09%, #134A85 100%); */
+    background: var(--color-gradient);
+}
+
+#contactUsLok .buttons3 {
+    display: flex;
+    justify-content: center;
+}
+
+#contactUsLok .contactBtnFlex {
+    display: flex;
+    justify-content: center;
+}
+
+#contactUsLok .getInTouchForm .social-icons-div path {
+    fill: 0 !important;
+}
+
+@media screen and (min-width: 991px) {
+
+    .network-card .nw-card-info {
+        height: calc(100% - 200px);
+    }
+
+    .network-card {
+        height: 100%;
+    }
+}
+
+.thank-you {
+    color: green;
+}
+
+.error-msg,
+.error {
+    color: red;
+}
+
+.buttonFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

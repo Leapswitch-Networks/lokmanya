@@ -1,0 +1,515 @@
+.ip-ttl-width {
+  width: 80%;
+}
+
+.int-patient-card {
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px #24242429;
+  text-align: center;
+  height: 100%;
+}
+
+.int-patient-card .count {
+  color: var(--color-primary);
+}
+
+.int-patient-card img {
+  width: 50px;
+  display: block;
+  margin: auto;
+  margin: 0 auto 8px;
+}
+
+.int-patient-card p {
+  margin-bottom: 0;
+}
+
+.patient-service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 5px 5px;
+  border: 1px solid var(--border-color);
+  transition: all .6s ease-in;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.patient-service-card h4 {
+  text-align: center;
+  color: var(--color-primary);
+  transition: all 0.5ms ease-in;
+  margin-block: 15px;
+}
+
+.patient-service-img {
+  border-radius: 10px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.patient-service-img img {
+  height: 100%;
+  object-fit: cover;
+  transition: all .6s ease-in;
+  width: 100%;
+}
+
+.patient-service-card:hover img {
+  transform: scale(1.1);
+}
+
+.patient-service-card:hover {
+  background: var(--dark-blue-gradient);
+  color: #fff;
+}
+
+.patient-service-card:hover h4 {
+  color: #fff;
+}
+
+/* journey */
+.treatment-journey {
+  background: var(--dark-blue-gradient);
+}
+
+.journey-card {
+  box-shadow: 0px 4px 8px 0px #24242429;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  min-height: 200px;
+  background-color: #fff;
+}
+
+.journey-title {
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.journey-title span {
+  background-color: var(--color-primary);
+  font-size: inherit !important;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 20px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+img.journey-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+}
+
+.meet-ex-card {
+  background-color: #fff !important;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 9;
+}
+
+.meet-ex-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: var(--border-color);
+  border-radius: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+  z-index: -1;
+  opacity: 0.9;
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
+  transition: opacity 0.3s ease;
+}
+
+.meet-ex-card:hover::before {
+  background: var(--color-gradient-hover);
+  opacity: 1;
+}
+
+.meet-ex-image {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.meet-ex-image img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  object-position: top;
+}
+
+.meet-ex-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  /* text-align: center; */
+  /* changes made by hamza */
+  text-align: left;
+
+}
+
+.meet-ex-info .button-primary {
+  position: absolute;
+  top: 51%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.doc-info p {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1rem;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.meet-expert .swiper {
+  padding: 8px;
+}
+
+.meet-expert .docCard {
+  margin: 0;
+}
+
+/* Hide paragraphs and reveal the button on hover */
+.meet-ex-card:hover .doc-info p {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.meet-ex-card:hover .doc-info .button-primary {
+  opacity: 1;
+  transform: translateY(-49%);
+}
+
+.meet-expert .swiper-btn-next {
+  right: -15px;
+  bottom: unset;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.meet-expert .swiper-btn-prev {
+  position: absolute;
+  left: -15px;
+  bottom: unset;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.meet-expert .swiper-wrapper {
+  margin-block: 10px;
+}
+
+.meet-expert .swiper-slide {
+  height: auto;
+}
+
+/* speciality */
+.specialities .swiper-btn-prev,
+.specialities .swiper-btn-next {
+  position: absolute;
+  left: -15px;
+  background-color: #fff;
+  border-radius: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  border: 1.03px solid #2424241A;
+  cursor: pointer;
+  height: 30px;
+  display: flex;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialities .swiper-btn-prev img,
+.specialities .swiper-btn-next img {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+}
+
+.specialities .swiper-btn-next {
+  right: -15px !important;
+  left: unset;
+}
+
+.patients-specialities .speciality-card {
+  margin: 5px;
+}
+
+/* speciality */
+
+/* success stories */
+#internationalPatients .common-card {
+  min-height: 300px;
+}
+
+/* get-in-touch */
+.get-in-touch {
+  background-color: var(--color-cyan-blue);
+  position: relative;
+}
+
+.get-in-touch-inner {
+  z-index: 1;
+  position: relative;
+}
+
+.get-in-touch::after,
+.get-in-touch::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 70%;
+  width: 400px;
+  background-size: contain !important;
+}
+
+.get-in-touch::after {
+  right: 0px;
+  background: url('../site/assets/images/international-patients/get-in-touch-right.webp') no-repeat;
+  opacity: 0.1;
+}
+
+.get-in-touch::before {
+  background: url('../site/assets/images/international-patients/get-in-touch-left.webp') no-repeat;
+  left: 0px;
+}
+
+.get-in-touch .form-title {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.getInTouchForm {
+  box-shadow: 0px 4px 8px 0px #24242429;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.blogs-getInTouchForm,
+.single-docForm {
+  background: var(--dark-blue-gradient);
+}
+
+#getInTouchForm .custom-select {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  padding-left: 0;
+  border-bottom: 1px solid #707070;
+}
+
+#getInTouchForm label {
+  color: #1A1A1A;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.getInTouchForm .social-icons-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.get-in-touch .getInTouchForm .social-icons-div path {
+  fill: #000;
+}
+
+.getInTouchForm h5 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.getInTouchForm textarea.common-input {
+  height: 40px;
+  display: block;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  border-width: 0px 0px 1px 0px;
+}
+
+.getInTouchForm textarea.common-input::placeholder {
+  /* bottom: 10px; */
+  position: relative;
+  top: 7px;
+}
+
+/*  */
+.contacts-div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.contacts-div p {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contacts-div .icon-wrap {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: #DDDDDD;
+}
+
+.contacts-div svg {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons-div svg {
+  height: 30px;
+  width: 30px;
+}
+
+.social-icons-div svg:first-child {
+  height: 38px;
+}
+
+/* get-in-touch */
+
+@media screen and (max-width:1200px) {
+  .contacts-div .icon-wrap {
+    padding: 8px;
+  }
+
+  .getInTouchForm {
+    padding: 20px;
+  }
+
+  .contacts-div svg {
+    height: 18px;
+    width: 18px;
+  }
+
+  .contacts-div {
+    gap: 10px;
+  }
+
+  .getInTouchForm .social-icons-div {
+    gap: 8px;
+  }
+
+  .social-icons-div svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .social-icons-div svg:first-child {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .journey-card {
+    padding: 15px;
+    min-height: 150px;
+  }
+
+  .journey-title {
+    margin-bottom: 10px;
+  }
+
+  .meet-ex-image img {
+    height: 250px;
+  }
+
+  .meet-ex-info {
+    padding: 15px;
+  }
+
+  .doc-info {
+    gap: 2px;
+  }
+
+  #getInTouchForm input {
+    border-radius: 0px;
+  }
+
+  /* changes made by hamza for appointment btn in mobiles */
+  .meet-ex-info {
+
+    padding-bottom: 65px;
+  }
+
+  .meet-ex-card .doc-info p {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .meet-ex-info .button-primary {
+
+    top: 100%;
+
+  }
+
+  .meet-ex-card .doc-info .button-primary {
+    opacity: 1;
+    transform: translateY(40%);
+  }
+
+  .common-card {
+    min-height: 240px;
+  }
+}
+
+@media screen and (max-width:550px) {
+
+  .meet-ex-image img {
+    height: 150px;
+  }
+
+  .meet-ex-info {
+    padding: 15px;
+    padding-bottom: 65px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .patient-service-img {
+    height: 120px;
+  }
+
+  .patient-service-card h4 {
+    margin-block: 10px;
+  }
+
+  .lok-network .col-6 {
+    width: 100% !important;
+  }
+}

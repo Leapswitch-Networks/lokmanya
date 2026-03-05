@@ -1,0 +1,16 @@
+@media screen and (max-width: 990px) {
+    .consultation-image {
+      width: 110px !important;
+      height: 110px !important;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 767px) {
+    .consultation-image {
+      width: 95px !important;
+      height: 95px !important;
+    }
+  }

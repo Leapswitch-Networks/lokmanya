@@ -1,0 +1,44 @@
+.ejvslR{
+  display: unset !important;
+  background-color: transparent !important;
+  height: 50px !important;
+  display: block !important;
+  /* padding: 0 !important; */
+}
+
+.rdt_TableCell:not(.rdt_TableCell:nth-last-child(2),.rdt_TableCell:nth-last-child(1))::after {
+  content: "";
+  height:50%;
+  width: 2px;
+  position: absolute;
+  right: 0px;
+  background: #f8f8f8;
+}
+.hDHZZh{
+  border-radius: var(--radius);
+  width: 100%;
+}
+.nodata-component{
+  height: 40px ;
+  width: 100% ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+}
+.iSRimz{
+  border-radius: var(--radius);
+  margin-top: 20px;
+}
+.user-access-listing .rdt_TableCell:not(.rdt_TableCell:nth-last-child(2),.rdt_TableCell:nth-last-child(1))::after {
+  display: none;
+}
+.rdt_TableCol:last-child {
+  justify-content: center;
+}
+
+div:has(> .rdt_Pagination){
+  margin: 0 20px;
+}
+div:has(> .nodata-component){
+  border-radius:var(--radius);
+}

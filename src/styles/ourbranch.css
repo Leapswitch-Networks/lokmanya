@@ -1,0 +1,132 @@
+.branch-hosp-img {
+    height: 335px;
+}
+
+.branch-hosp-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+ul.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cnt-col .contact-txt {
+    font-size: inherit;
+}
+
+.cnt-col .contact-txt:hover {
+    text-decoration: underline !important;
+}
+
+.contact-ttl {
+    margin-bottom: 2px;
+}
+
+.contact-details a:hover {
+    color: var(--color-primary);
+}
+
+.sec-border {
+    padding-block: 20px;
+    border-radius: 15px;
+    padding-inline: 15px;
+    background: linear-gradient(#fff, #fff) padding-box, var(--color-gradient-hover) border-box;
+    border: 1px solid transparent;
+}
+
+.contact-details a,
+.contact-details li {
+    font-size: inherit;
+}
+
+.sb-road-hosp {
+    scroll-margin: 100px;
+}
+
+.get-dir {
+    height: 40px;
+    width: fit-content;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: transparent;
+    border: none;
+    background: linear-gradient(#fff, #fff) padding-box,
+        var(--color-gradient-hover) border-box;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.get-dir span {
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid;
+    background: var(--color-gradient-hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+.get-dir:hover span {
+    background-color: transparent;
+    opacity: 1;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+    white-space: nowrap;
+}
+
+.get-dir:hover {
+    background: var(--color-gradient);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--color-gradient);
+}
+
+.get-dir svg {
+    rotate: 45deg;
+    margin-left: 5px;
+}
+
+.get-dir:hover svg {
+    rotate: 25deg;
+    margin-left: 5px;
+}
+
+.location-res ul {
+    padding: 0;
+    margin: 0;
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location-res ul li {
+    font-size: 14px;
+    /* margin-bottom: 10px; */
+    font-weight: 600;
+    color: #134A85;
+}
+
+@media screen and (max-width: 550px) {
+    .branch-hosp-img {
+        height: 195px;
+    }
+
+    .get-dir {
+        height: 35px;
+        border-radius: 5px;
+    }
+}

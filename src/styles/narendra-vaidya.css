@@ -1,0 +1,449 @@
+/* hero */
+.narendra-hero-text {
+    padding-block: 60px;
+}
+
+.narendra-hero-img {
+    padding-top: 30px;
+}
+
+/* Book Appointmet and Call Now section css starts */
+
+.enquiry-meet-section {
+    margin-top: 30px;
+}
+
+.enquiry-meet-section-narendra .enquiry-meet-inner {
+    border-radius: 10px;
+    /* min-height: unset;
+    height: unset; */
+    /* display: unset;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset; */
+    padding: 0px 65px;
+    /* padding: 0px 65px 0px 65px; */
+}
+
+.enquiry-meet-section-narendra #appointment {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquiry-meet-section-narendra #appointment input::placeholder {
+    color: rgb(255, 255, 255, 0.5) !important;
+}
+
+.enquiry-meet-section-narendra .enquiry-meet-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: unset;
+}
+
+/* .enquiry-meet-img {
+    height: auto;
+    width: 305px;
+    position: absolute;
+    bottom: 0;
+} */
+
+.enquiry-meet-section-narendra .enquiry-meet-img img {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    min-height: 320px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+
+/* hospital counter */
+.hospital-counter-main {
+    background: var(--dark-blue-gradient);
+    border-radius: 15px;
+    padding: 35px 120px;
+}
+
+.hospital-counter {
+    font-size: 35px !important;
+    font-weight: 700;
+    color: #fff;
+}
+
+.counter-inner-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hospital-counter-main .col:not(:last-child) .counter-inner-line::after {
+    content: '';
+    position: absolute;
+    height: 55%;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(33, 60, 115, 0) 0%, #27BCB8 50%, rgba(33, 60, 115, 0) 100%);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* counter */
+.narendra-counter.counter2 {
+    right: 0;
+    left: unset;
+    width: 150px;
+}
+
+/* WHY NARENDRA */
+
+.why-narendra-inner {
+    padding-block: 55px;
+    padding-inline: 55px;
+    background: linear-gradient(315deg, rgba(84, 190, 149, 0.25) 0%, rgba(46, 123, 154, 0.25) 28.85%, rgba(34, 64, 117, 0.25) 100%);
+    border-radius: 15px;
+    text-align: center;
+    background-image: url('../site/assets/images/why-narendra-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-narendra-inner .why-narendra-content p {
+    font-size: 15px;
+}
+
+/* narendra hero */
+.narendra-hero {
+    background-color: #DFF5F5;
+}
+
+/* table */
+/* Base styles */
+.table-limited {
+    color: #343434A6;
+}
+
+.table-desc {
+    color: #343434A6;
+    font-size: 15px;
+}
+
+.hover-row {
+    cursor: pointer;
+}
+
+/* Hover behavior */
+.hover-row:hover .table-limited.td-hover {
+    color: #213C73;
+    font-weight: 600;
+}
+
+.hover-row:hover .table-desc.td-hover {
+    color: #343434;
+}
+
+/* narendra achievements */
+.achievements-inner {
+    /* position: relative; */
+    background-image: url('/images/narendra-single/n-a-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .narendra-achievements .fancy-bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.achievements-img-box {
+    position: relative;
+    z-index: 2;
+}
+
+/* enquiry section */
+.book-two-new-btn {
+    border: 1px solid #fff;
+    border-radius: 7.5px;
+    padding: 11px 15px;
+    background: transparent;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-two-new-btn span {
+    color: white;
+}
+
+.book-two-new-btn:hover {
+    background-color: #fff;
+    border: 1px solid #2BA9B4;
+}
+
+.book-two-new-btn:hover span {
+    background: linear-gradient(315deg, #223E76 0%, #365699 51.11%, #2BA9B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.narendra-enquiry-section .enquiry-meet-inner {
+    padding-block: 12px;
+}
+
+.narendra-enquiry-section .enquiry-meet-img {
+    display: flex;
+    justify-content: center;
+    height: 96%;
+    align-items: center;
+}
+
+
+/* benefits */
+
+.benefit-row {
+    padding: 0px 0px 10px 2px;
+    position: relative;
+}
+
+.benefit-row.inverse {
+    padding: 0px 2px 10px 0px;
+    position: relative;
+}
+
+.benefit-row:not(.inverse)::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+    border-radius: 10px;
+}
+
+.benefit-row:not(.inverse)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+    border-radius: 10px;
+}
+
+.benefit-row.inverse {
+    position: relative;
+}
+
+.benefit-row.inverse::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+    border-radius: 10px;
+}
+
+.benefit-row.inverse::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 50%;
+    background: linear-gradient(315deg, #54BE95 0%, #2E7B9A 28.85%, #224075 100%);
+    border-radius: 10px;
+}
+
+/* about */
+
+.about-narendra-content {
+    padding: 55px 45px 55px 135px;
+    background: var(--dark-blue-gradient);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.narendra-cut-div {
+    position: relative;
+}
+
+.narendra-cut {
+    position: absolute;
+    bottom: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 15px;
+    width: calc(100% + 80px);
+    height: 100%;
+}
+
+.narendra-polygon {
+    position: absolute;
+    bottom: 0px;
+    right: -80px;
+}
+
+/* /* Knee cards */
+.knee-cards {
+    position: relative;
+}
+
+.knee-cards__col {
+    padding: 10px 20px;
+}
+
+.knee-cards__border-right {
+    border-right: 1px solid #34343440
+}
+
+.knee-cards__highlight-wrapper {
+    position: relative;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.knee-cards__highlight-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.knee-cards__highlight-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(33, 60, 115, 0) 0%, #213C73 100%);
+    z-index: 2;
+}
+
+.knee-cards__highlight-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    padding: 13px;
+    font-size: 13px;
+}
+
+/* end */
+
+/* media queries */
+@media (max-width: 767px) {
+    .why-narendra-inner {
+        padding-block: 30px;
+        padding-inline: 15px;
+    }
+
+    .narendra-enquiry-section {
+        padding: 0;
+    }
+
+    .knee-cards__border-right {
+        border-bottom: 1px solid #ccc;
+        border-right: 0px;
+    }
+
+    .knee-cards__icon-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .narendra-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .narendra-hero-text__desc {
+        text-align: center;
+    }
+
+    .narendra-procedures {
+        padding-top: 30px;
+    }
+
+    .narendra-benefit-description {
+        text-align: center;
+    }
+
+    .narendra-hero-text {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .narendra-hero-img {
+        padding-top: 15px;
+    }
+
+    .narendra-single {
+        max-height: 270px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .narendra-cut {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        margin: 0 auto 20px auto;
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px
+    }
+
+    .narendra-polygon {
+        display: none !important;
+    }
+
+    .about-narendra-content {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .narendra-cut-div {
+        display: flex;
+    }
+
+    .about-narendra {
+        padding-top: 0px;
+    }
+
+    .achievements-inner {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hospital-counter-main {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .rotating-section {
+        display: none;
+    }
+}

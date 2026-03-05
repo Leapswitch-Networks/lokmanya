@@ -1,0 +1,31 @@
+import * as React from "react";
+const BlueRTArrow = (props) => (
+  <svg
+    width={11}
+    height={11}
+    viewBox="0 0 11 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M7.86849 1.72769L0.224335 9.37184L1.4255 10.573L9.06964 2.92885L9.06964 9.37186L10.7683 9.37186L10.7683 0.0289891L1.42547 0.0289895L1.42547 1.72769L7.86849 1.72769Z"
+      fill="url(#paint0_linear_3678_934)"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_3678_934"
+        x1={10.7683}
+        y1={0.0289906}
+        x2={0.224335}
+        y2={10.573}
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#223E76" />
+        <stop offset={0.511069} stopColor="#365699" />
+        <stop offset={1} stopColor="#2BA9B4" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export default BlueRTArrow;

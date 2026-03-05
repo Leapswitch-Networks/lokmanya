@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+.ck.ck-editor__editable {
+	min-height: 100px;
+}
+
+.ck table {
+	min-width: unset;
+}
+.ck.ck-balloon-panel.ck-balloon-panel_position_border-side_right.ck-powered-by-balloon {
+    display: none;
+}

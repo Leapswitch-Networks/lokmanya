@@ -1,0 +1,1208 @@
+/* Header */
+.brand-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.header {
+  align-items: unset;
+  background-color: unset;
+  box-shadow: unset;
+  display: unset;
+  gap: unset;
+  height: unset;
+  justify-content: unset;
+  padding: unset;
+  position: unset;
+  width: unset;
+  z-index: unset;
+  inset: auto;
+}
+
+.header_section {
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  padding-inline: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 #0000001a;
+  transition: top 0.3s;
+}
+
+.header_section .nav-item.link-border.active a {
+  color: #233877;
+}
+
+.header-inner {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.header-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  background-color: #54be95;
+  border: 1.5px solid #233877;
+  border-radius: 10px;
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.header-btn a {
+  color: #fff;
+}
+
+.header-btn {
+  color: #fff;
+  padding: 10px 15px 10px 35px;
+  transition: all ease 0.5s;
+}
+
+#mobile_toggle .navbar-nav {
+  gap: 20px;
+}
+
+.header-btn-svg {
+  position: absolute;
+  left: -20px;
+  top: -3px;
+}
+
+/* Banner Section */
+.neuro-sci-bnr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.neuro-sci-bnr::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../public/images/new-theme/Newpages/CampaignPages/neuro-sci-bnr-img.webp);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+}
+.sportInjuryBanere {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.sportInjuryBanere::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../public/images/new-theme/Newpages/CampaignPages/BGSports.webp);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+}
+
+.cardicScienceBaner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.cardicScienceBaner::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../public/images/new-theme/Newpages/CampaignPages/BGCardiac.webp);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+}
+
+.neuro-sci-bnr-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.neuro-sci-counter {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.neuro-sci-txt {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.neuro-sci-bnr-img {
+  width: 500px;
+}
+.sportInjury {
+  width: 350px;
+}
+.cardicScienceImage {
+  width: 330px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.neuro-sci-bnr .gen-sgy-bnr-ctnt {
+  padding-left: 50px;
+}
+
+/* --------------------------------------- */
+
+.general-sgy-cp-bnr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.general-sgy-cp-bnr::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../public/images/new-theme/Newpages/CampaignPages/gen-banner-img.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+}
+
+.gen-sgy-bnr-ctnt {
+  padding-left: 50px;
+}
+
+.gen-sgy-bnr-ctnt .book-new-btn {
+  width: fit-content;
+}
+
+.gen-sgy-bnr-img {
+  position: absolute;
+  width: 535px;
+  bottom: 30px;
+  right: 55px;
+}
+
+.gen-sgy-bnr-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* About section start */
+.about-neurosurgery-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-neurosurgery-ctnt {
+  background-color: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 2px 7px 15px 1px #2020204d;
+  position: absolute;
+  right: 15px;
+  width: 65%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* About section ends */
+
+/* Condition treat section starts */
+.campagin-ctreat,
+.campaign-team-exprt {
+  background-color: var(--color-cyan-blue);
+}
+
+.campagin-ctreat-card {
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid transparent;
+  padding: 30px 15px;
+  transition: all 0.3s ease;
+  /* cursor: pointer; */
+  text-align: center;
+}
+
+.campagin-ctreat-card svg {
+  width: 60px;
+  height: 60px;
+}
+
+.campagin-ctreat-card::before,
+.campagin-ctreat-card::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 2.5px solid #233877;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Top-right corner */
+.campagin-ctreat-card::before {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+  opacity: 0;
+  border-top-right-radius: 20px;
+}
+
+/* Bottom-left corner */
+.campagin-ctreat-card::after {
+  bottom: -2px;
+  left: -2px;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  border-bottom-left-radius: 20px;
+}
+
+.campagin-ctreat-card:hover::before,
+.campagin-ctreat-card:hover::after {
+  opacity: 1;
+}
+
+.campagin-ctreat-card:hover svg,
+.campagin-ctreat-card:hover p {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.campagin-ctreat-card:hover img,
+.campagin-ctreat-card:hover p {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.campagin-ctreat-card img,
+.campagin-ctreat-card p {
+  transition: transform 0.3s ease;
+}
+
+/* Condition treat section ends */
+
+/* Our Service and Prd Section Starts */
+.campagin-our-srvc-card-img {
+  position: relative;
+  height: 235px;
+}
+
+.campagin-our-srvc-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.campagin-our-srvc-card-ctnt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0;
+  background-color: #fff;
+  width: 90%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Our Service and Prd Section Ends */
+
+/* Why Choose Section Ends */
+.campaign-why-choose-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.campaign-why-choose-ctnt svg {
+  width: 55px;
+}
+
+.campaign-why-choose-ctnt p {
+  color: #202020;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.grad-black-1,
+.grad-black-2 {
+  position: relative;
+}
+
+.grad-black-1:before {
+  background: linear-gradient(-91deg, #23387700, #192b61df 100%, #23387700 0);
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -2px;
+  width: 2px;
+}
+
+.grad-black-1:after {
+  background: linear-gradient(90deg, #23387700, #192b61df 100%, #23387700 0);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+.grad-black-2:before {
+  background: linear-gradient(265deg, #23387700, #192b61df 0, #23387700);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.grad-black-2:after {
+  background: linear-gradient(90deg, #23387700, #192b61df 0, #23387700);
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+  width: 100%;
+}
+
+/* Why Choose Section Ends */
+
+/* When Consult Section starts */
+.campaign-when-consult-img {
+  border-radius: 15px;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+}
+
+.campaign-when-consult-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: blur(3px);
+}
+
+.campaign-when-consult .swiper-wrapper {
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+
+.campaign-when-consult .swiper-slide-active .campaign-when-consult-img img {
+  filter: unset;
+}
+
+.campaign-when-consult .swiper-slide-active {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+.campaign-when-consult .swiper-slide-prev,
+.campaign-when-consult .swiper-slide-next {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.campaign-when-consult .swiper-pagination,
+.signs-you-see .swiper-pagination,
+.campaign-team-exprt .swiper-pagination {
+  position: unset;
+  align-items: center;
+  background-color: var(--color-primary-light-new);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0;
+  padding: 8px;
+  position: static;
+  width: fit-content;
+}
+
+.campaign-when-consult .swiper-slide .campaign-when-consult-card p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.campaign-when-consult .swiper-slide-active .campaign-when-consult-card p {
+  opacity: 1;
+  max-height: 200px;
+  /* adjust as needed */
+}
+
+.campaign-when-consult-card p {
+  color: #233877;
+  font-weight: 500;
+  font-size: 13px !important;
+}
+
+.campaign-when-consult .swiper-slide {
+  transition: transform 0.5s ease;
+  height: auto;
+}
+
+.campaign-when-consult-card {
+  height: 100%;
+}
+
+.campaign-when-consult-card p {
+  color: #233877;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* When Consult Section Ends */
+
+/* Expert Neuro MEET Section STARTS */
+.expert-neuro-meet .enquiry-meet-inner {
+  min-height: 220px;
+  height: 170px;
+}
+
+/* .expert-neuro-meet .enquiry-meet-section {
+    margin-top: 70px;
+} */
+
+/* Expert Neuro MEET Section Ends */
+
+/* Team expert Section Ends */
+.campaign-team-exprt .swiper-btn-prev {
+  bottom: auto;
+  left: -15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.campaign-team-exprt .swiper-btn-next {
+  bottom: auto;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.campaign-team-exprt .swiper-wrapper {
+  padding-block: 10px;
+}
+
+.campaign-team-exprt .swiper-slide {
+  height: auto;
+}
+
+.campaign-team-exprt .docCard-inner {
+  position: relative;
+}
+
+.campaign-team-exprt .docImg .prof-svg-1,
+.campaign-team-exprt .docImg .prof-svg-2 {
+  position: relative;
+}
+
+.campaign-team-exprt .docImg .prof-svg-1 img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -2px;
+  left: -4px;
+}
+
+.campaign-team-exprt .docImg .prof-svg-2 img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 2px;
+  right: -4px;
+}
+
+.campaign-team-exprt .docImg img {
+  position: relative;
+}
+
+.campaign-team-exprt .swiper-pagination {
+  background-color: #fff;
+}
+
+/* Team expert Section Ends */
+
+/* Book Section Ends */
+.campaign-book-sec-inner {
+  border-radius: 20px;
+}
+
+.camp-book-form {
+  padding-inline: 50px;
+}
+
+.campaign-book-sec-img img {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.campaign-book-sec-img {
+  height: 375px;
+}
+
+/* Book Section Ends */
+
+/* Footer section starts */
+/* Footer */
+
+footer {
+  background-color: var(--color-cyan-blue);
+  padding-inline: 50px;
+  padding-block: 25px;
+}
+
+.footer-ctnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hatsoff-link {
+  font-weight: 600;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.hatsoff-link:hover {
+  text-decoration: underline !important;
+}
+
+.bottom-fixed-buttons a {
+  text-decoration: none;
+}
+
+.bottom-fixed-buttons {
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  display: flex;
+  display: none;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.bottom-fixed-buttons .btn-book-app,
+.bottom-fixed-buttons .btn-home-care {
+  background-color: var(--primary-pink);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.phone-btn {
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: -10px;
+  right: -35px;
+  background-color: var(--soft-pink);
+  border-radius: 100%;
+  padding: 8px;
+}
+
+#requestCallbackModal .requestcallbackform {
+  margin-top: 0 !important;
+}
+
+/* Footer section ends */
+
+/* General Surgery Css starts */
+
+/* .about-exprt-img img {
+    width: 100%;
+    height: 100%;
+} */
+
+.adv-srg-care .enquiry-meet-img {
+  width: auto;
+}
+
+/* gen why choose sect starts */
+.about-exprt-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.gen-why-img img {
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.gen-why-img {
+  position: relative;
+}
+
+.gen-why-img::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background-color: #edefea;
+  position: absolute;
+  left: 0;
+  border-radius: 75px;
+  z-index: -1;
+  bottom: -2px;
+}
+
+.gen-why-book-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.gen-why-counter-card {
+  border: 1px solid #233877;
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gen-why-counter-numb {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0%;
+}
+
+/* gen why choose sect ends */
+
+/* Sign you should see sect starts */
+
+.signs-you-see {
+  position: relative;
+}
+
+.signs-you-see::before {
+  background: var(--dark-blue-gradient);
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  height: 53%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.signs-you-see-img {
+  height: 185px;
+}
+
+.signs-you-see-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.signs-you-see-card p {
+  font-size: 14px;
+  color: #223e76;
+}
+
+/* Sign you should see sect ends */
+
+/* gen meet sect ends */
+.gen-meet-sec .enquiry-meet-img {
+  height: 370px;
+  /* height: auto; */
+  width: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+/* gen meet sect ends */
+.gen-footer footer {
+  background: var(--color-cyan-blue);
+}
+
+.gen-footer footer p,
+.gen-footer footer div,
+.gen-footer footer a {
+  color: #000 !important;
+}
+
+.gen-footer footer a:hover {
+  text-decoration: underline !important;
+}
+
+.neuro-sci-bnr-img img {
+  animation: floatInAllDirections 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.gen-footer footer p,
+.gen-footer footer div,
+.gen-footer footer a {
+  color: #fff;
+}
+
+.gen-meet-sec select option {
+  background-color: #134a85;
+  color: #fff;
+}
+
+.gen-meet-sec input::placeholder {
+  color: #fff;
+}
+
+/* Floating animation in all directions */
+@keyframes floatInAllDirections {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(10px, -2px);
+  }
+
+  40% {
+    transform: translate(-3px, 2px);
+  }
+
+  60% {
+    transform: translate(2px, 4px);
+  }
+
+  80% {
+    transform: translate(-4px, -3px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.campaign-book-sec input::placeholder {
+  color: #fff;
+}
+
+.campaign-book-sec option {
+  background-color: #134a85;
+  color: #fff;
+}
+
+.locations-card:hover {
+  box-shadow: 0 8px 16px #0003, 0 4px 6px #00000026;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.locations-card {
+  cursor: pointer;
+}
+
+/* General Surgery Css Ends */
+
+.about-neurosurgery-ctnt.sportInjury{
+  right: -5% !important;
+}
+.about-neurosurgery-ctnt.cardicScienceAbout{
+  right: -5% !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  #mobile_toggle .navbar-nav {
+    gap: 5px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1290px) {
+  .about-neurosurgery-ctnt {
+    padding: 40px 35px;
+    position: unset;
+    width: 100%;
+    transform: unset;
+  }
+
+  #mobile_toggle .navbar-nav {
+    gap: 5px;
+  }
+
+  .gen-meet-sec .enquiry-meet-img {
+    height: 300px;
+  }
+
+  .gen-sgy-bnr-img {
+    width: 450px;
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1220px) {
+  .header-btn-container {
+    width: 25%;
+    margin-inline: auto;
+    margin-top: 15px;
+  }
+
+  .gen-meet-sec .enquiry-meet-img {
+    height: 250px;
+  }
+
+  .gen-sgy-bnr-img {
+    left: 50px;
+  }
+
+  .gen-sgy-bnr-ctnt {
+    padding-left: 0px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gen-meet-sec .enquiry-meet-img {
+    height: 250px;
+  }
+
+  .gen-sgy-bnr-img {
+    left: 50px;
+  }
+
+  .gen-sgy-bnr-ctnt {
+    padding-left: 0px;
+    padding-right: 25px;
+  }
+
+  .gen-sgy-bnr-img {
+    width: 450px;
+    bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .grad-black-1:after,
+  .grad-black-1:before,
+  .grad-black-2:after,
+  .grad-black-2:before {
+    display: none;
+  }
+
+  .camp-book-form {
+    padding-inline: 15px;
+    padding-block: 30px;
+  }
+
+  .about-neurosurgery-ctnt {
+    padding: 35px;
+    position: unset;
+    width: 100%;
+    transform: unset;
+  }
+
+  .about-neurosurgery-img,
+  .about-exprt-img,
+  .campaign-why-choose-img {
+    width: 420px;
+    margin-inline: auto;
+    margin-bottom: 15px;
+  }
+
+  #mobile_toggle .navbar-nav {
+    gap: 0px;
+  }
+
+  .header-btn-container {
+    width: 45%;
+    margin-inline: auto;
+    margin-top: 15px;
+  }
+
+  .header-btn-svg svg {
+    height: 48px;
+    width: 45px;
+  }
+
+  .header-btn {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .gen-why-counter-numb {
+    font-weight: 600;
+    font-size: 27px !important;
+  }
+
+  .gen-sgy-bnr-img {
+    position: unset;
+  }
+
+  .gen-sgy-bnr-img {
+    position: unset;
+    width: 285px;
+    margin-inline: auto;
+  }
+
+  .gen-sgy-bnr-ctnt {
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .general-sgy-cp-bnr {
+    justify-content: center;
+  }
+
+  .gen-sgy-bnr-img {
+    position: relative;
+    margin-inline: auto;
+    left: 0;
+    bottom: 10px;
+  }
+
+  .gen-sgy-bnr-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0px;
+    border-radius: 25px;
+  }
+
+  .neuro-sci-bnr-img {
+    width: 255px;
+    margin-inline: auto;
+  }
+
+  .neuro-sci-bnr {
+    justify-content: center;
+  }
+  .sportInjuryBanere,
+  .cardicScienceBaner {
+    justify-content: center;
+  }
+
+  .neuro-sci-bnr .gen-sgy-bnr-ctnt {
+    padding-inline: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_section {
+    padding-inline: 10px;
+  }
+
+  .campaign-when-consult .swiper-slide-active {
+    transform: scale(1);
+  }
+
+  .campaign-when-consult .swiper-slide-prev,
+  .campaign-when-consult .swiper-slide-next {
+    transform: scale(1);
+  }
+
+  .campaign-when-consult-img img {
+    filter: unset;
+  }
+
+  .campaign-when-consult .swiper-wrapper {
+    padding-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  /* .campaign-when-consult-img {
+        height: 320px;
+    } */
+
+  .expert-neuro-meet .enquiry-meet-inner {
+    min-height: unset;
+    height: 100%;
+  }
+
+  /* .expert-neuro-meet .enquiry-meet-section {
+        margin-top: 0px;
+    } */
+
+  .expert-neuro-meet {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+
+  .footer-ctnt {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-link,
+  .hatsoff-link {
+    font-size: 13px;
+  }
+
+  .about-neurosurgery-ctnt {
+    padding: 30px 15px;
+  }
+
+  .campagin-ctreat-card img,
+  .campagin-ctreat-card svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .gen-why-img {
+    width: 48%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+  }
+
+  .gen-why-counter-numb {
+    font-weight: 600;
+    font-size: 25px !important;
+  }
+
+  .gen-why-img::after {
+    border-radius: 25px;
+  }
+
+  .gen-why-img img {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .gen-why-counter-card {
+    border-radius: 15px;
+    padding: 15px 10px;
+  }
+
+  .neuro-sci-counter {
+    font-size: 18px !important;
+  }
+
+  .neuro-sci-bnr-img img {
+    animation: floatInAllDirections 6s ease-in-out infinite;
+  }
+
+  .gen-why-choose {
+    padding-top: 30px !important;
+  }
+
+  .expert-neuro-meet .enquiry-meet-ctnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .expert-neuro-meet {
+    padding-block: 0;
+  }
+
+  .about-neurosurgery-img,
+  .about-exprt-img,
+  .campaign-why-choose-img {
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 15px;
+  }
+
+  .header-btn-container {
+    width: 58%;
+  }
+
+  .gen-why-counter-numb {
+    font-weight: 600;
+    font-size: 20px !important;
+  }
+
+  .neuro-sci-bnr-img {
+    width: 200px;
+  }
+
+  .campaign-when-consult-img {
+    height: 155px;
+  }
+
+  .campagin-our-srvc-card-img {
+    height: 170px;
+  }
+
+  .campagin-our-srvc-card-ctnt h4 {
+    font-size: 13px !important;
+  }
+
+  .campagin-our-srvc-card-ctnt {
+    height: 50px;
+  }
+}

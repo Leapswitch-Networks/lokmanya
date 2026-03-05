@@ -1,0 +1,654 @@
+.hospital-counter-main {
+    background: var(--dark-blue-gradient);
+    border-radius: 15px;
+    padding: 35px 120px;
+}
+
+.hospital-counter {
+    font-size: 35px !important;
+    font-weight: 700;
+    color: #fff;
+}
+
+.counter-inner-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hospital-counter-main .col:not(:last-child) .counter-inner-line::after {
+    content: '';
+    position: absolute;
+    height: 55%;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(33, 60, 115, 0) 0%, #27BCB8 50%, rgba(33, 60, 115, 0) 100%);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* Why choose section starts */
+.hospital-why-choose-us-img {
+    /* box-shadow: 2px 4px 7px 0px #24242426; */
+    border-radius: 7.5px;
+    position: relative;
+    /* height: 100%; */
+}
+
+.hospital-why-choose-us-img img {
+    border-radius: 7.5px;
+    width: 100%;
+    height: 100%;
+}
+
+.hospital-why-choose-img-overlay p {
+    color: #213C73;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.hospital-why-choose-img-overlay {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 10px 0px 10px 10px;
+    background-color: #fff;
+    /* border: 5px solid #fff; */
+    border-radius: 7.5px;
+}
+
+.hospital-why-choose-img-overlay-content {
+    position: relative;
+    border-radius: 7.5px;
+    background-color: #F4F9FF;
+    padding: 8px 10px;
+    box-shadow: 2px 4px 7px 0px #24242426;
+}
+
+.hospital-why-choose-img-overlay-content::after {
+    content: '';
+    position: absolute;
+    background-image: url('../site/assets/images/New-theme/icons/curve-icon.png');
+    top: 3px;
+    left: -28px;
+    width: 22px;
+    height: 30px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+/* Why choose section ends */
+/* Our services section starts */
+.hospital-our-services-card {
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 7px 0px #24242426;
+}
+
+.hospital-our-services-card-img img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.hospital-our-services-card-content p {
+    margin-bottom: 0;
+}
+
+/* Our Services section ends */
+
+/* bnft to choose section starts */
+/* .hospital-choose-bnft-outer {
+    background: linear-gradient(315deg, #223E76 0%, #365699 51.11%, #2BA9B4 100%);
+    border-radius: 15px;
+    box-shadow: 2px 4px 7px 0px #24242426;
+} */
+
+.hospital-choose-bnft-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hospital-choose-bnft-card::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+
+    background: linear-gradient(315deg, #223E76 0%, #365699 51.11%, #2BA9B4 100%);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.bg-color-image {
+    background: var(--dark-blue-gradient);
+}
+
+.book-new-btn {
+    border: 1px solid transparent;
+    border-radius: 7.5px;
+    padding: 11px 15px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-new-btn span {
+    display: inline-block;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-new-btn:hover {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.book-new-btn:hover span {
+    background: none;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+}
+
+.book-two-new-btn {
+    border: 1px solid #fff;
+    border-radius: 7.5px;
+    padding: 11px 15px;
+    background: transparent;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-two-new-btn span {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-two-new-btn:hover {
+    background-color: #fff;
+    border: 1px solid #2BA9B4;
+}
+
+.book-two-new-btn:hover span {
+    background: linear-gradient(315deg, #223E76 0%, #365699 51.11%, #2BA9B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* bnft to choose section ends */
+/* Conditions we treat section starts */
+.hospital-conditions-treat-outer {
+    border-radius: 10px;
+    padding: 30px 0px 30px 35px;
+}
+
+.hospital-conditions-treat-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hospital-conditions-treat-list li {
+    color: #fff;
+}
+
+.hospital-conditions-treat-list li::marker {
+    color: #fff;
+}
+
+.hospital-conditions-treat-list {
+    grid-column-gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 15px;
+    margin-bottom: 0;
+    grid-row-gap: 10px;
+}
+
+/* Conditions we treat section ends */
+
+/* FAQ section starts */
+.hospital-faq-section {
+    background-color: var(--color-cyan-blue);
+}
+
+.hospital-faq-section .faq-container {
+    background-color: unset !important;
+}
+
+.hospital-faq-section .faq-question {
+    background-color: #fff;
+}
+
+/* FAQ section ends */
+
+/* Meet Expert start */
+
+.hosp-met-exprt .swiper {
+    padding: 0 10px 0 0;
+}
+
+.hosp-met-exprt .swiper-pagination,
+.hospital-wrld-facility .swiper-pagination {
+    position: unset;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content !important;
+    margin: 25px auto 0 auto;
+    padding: 8px;
+    background-color: var(--color-primary-light-new);
+    border-radius: 18px;
+}
+
+/* Meet Expert ends */
+
+/* Compre care start */
+.hosp-comprehensive-care {
+    background-color: #DFF5F5;
+}
+
+.hosp-comprehensive-care .why-choose-section {
+    background-color: #DFF5F5;
+    padding-bottom: 0;
+}
+
+.hosp-comprehensive-care .why-choose-img {
+    height: 255px;
+}
+
+/* Compre care ends */
+/* World Class starts */
+.hospital-wrld-facility {
+    background: linear-gradient(180deg, #DFF5F5 0%, #FFFFFF 100%);
+}
+
+.hospital-wrld-facility .swiper-slide {
+    height: auto;
+}
+
+.hospital-wrld-facility .swiper {
+    padding: 0 10px;
+}
+
+.hospital-wrld-facility-card {
+    box-shadow: 0px 4px 8px 0px #24242429;
+    border-radius: 15px;
+    border: 1px solid #2424241A;
+    padding: 10px;
+    height: 100%;
+}
+
+.hospital-wrld-facility-card-img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.hospital-wrld-facility-card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.hospital-wrld-facility-card-content h4 {
+    color: #134A85;
+    margin-bottom: 10px;
+}
+
+.hosp-ovw-section h2 {
+    color: var(--color-primary);
+}
+
+.hosp-ovw-section .html-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* World Class ends */
+
+/* Book App start */
+#appointment input,
+
+#appointment select {
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#appointment .custom-btn {
+    width: 100%;
+    color: #000 !important;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 21px 9px 21px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    display: block;
+}
+
+
+#appointment input::placeholder {
+    /* color: rgb(172, 168, 168); */
+    color: #FFFFFF;
+    opacity: 0.5;
+    /* font-size: 14px; */
+}
+
+/* Book App ends */
+.hypc-book-ap {
+    margin-top: 0px !important;
+}
+
+.css-b62m3t-container {
+    z-index: 99;
+}
+
+.amb-sec .enquiry-meet-ctnt {
+    width: 80%;
+}
+
+.hypc-book-ap .enquiry-meet-inner {
+    border-radius: 10px;
+    /* min-height: unset;
+    height: unset; */
+    /* display: unset;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset; */
+    padding: 0px 65px;
+    /* padding: 0px 65px 0px 65px; */
+}
+
+.hypc-book-ap #appointment {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hypc-book-ap #appointment input::placeholder {
+    color: rgb(255, 255, 255, 0.5) !important;
+}
+
+.hypc-book-ap .enquiry-meet-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: unset;
+}
+
+.hypc-book-ap .enquiry-meet-img img {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    min-height: 320px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.hosp-amb-section .enquiry-meet-img {
+    bottom: 0;
+    height: calc(100% + 55px);
+    /* left: 10px; */
+    position: absolute;
+    /* width: 300px; */
+    width: 690px;
+}
+
+.hosp-amb-section .enquiry-meet-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hosp-comprehensive-care .why-choose-section-ctnt .comp-sec-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hosp-comprehensive-care .btn-modal-close {
+    position: absolute;
+    background: var(--color-gradient);
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px 8px;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.hosp-comprehensive-care .why-choose-section-ctnt .btn-link {
+    color: var(--color-primary);
+    /* text-decoration: none; */
+}
+
+.form-select-white {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-select-white option {
+    background-color: #134A85;
+    color: #fff;
+}
+
+.enquiry-meet-inner .enquiry-meet-link:hover {
+    text-decoration: underline !important;
+}
+
+.exp-exc-mobile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.exp-exc-mobile-svg {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:1320px) {
+    .enquiry-meet-img {
+        height: 290px;
+    }
+
+    .hosp-amb-section .enquiry-meet-img {
+        height: auto;
+        position: static;
+        width: 100%;
+    }
+
+    /* .hospital-book-section.enquiry-meet-section {
+        margin-top: 0px;
+    } */
+
+}
+
+@media (min-width: 990px) and (max-width:1450px) {
+
+    /* .hospital-book-section.enquiry-meet-section {
+        margin-top: 0px;
+    } */
+}
+
+@media (min-width: 991px) {
+    .hosp-comprehensive-care .why-choose-section-card {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .hospital-counter-main .col:nth-child(2) .counter-inner-line::after,
+    .hospital-counter-main .col:last-child .counter-inner-line::after {
+        content: none;
+    }
+
+    .hospital-counter-main {
+        padding: 30px;
+    }
+
+    .hospital-counter {
+        font-size: 30px !important;
+    }
+
+    .hospital-conditions-treat-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hosp-comprehensive-care .why-choose-img {
+        height: 175px;
+    }
+
+    .hospital-book-section .enquiry-meet-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hospital-book-section .enquiry-meet-img {
+        height: 215px;
+        /* height: auto; */
+        width: 305px;
+    }
+}
+
+@media (max-width: 990px) {
+    .hospital-why-choose-us-img {
+        width: 75%;
+        margin-inline: auto;
+    }
+
+    .hosp-comprehensive-care .why-choose-img {
+        height: 260px;
+    }
+
+    .hosp-amb-section .enquiry-meet-img {
+        height: 150px;
+        position: unset;
+        width: 100%;
+    }
+
+    .hosp-amb-section .enquiry-meet-img img {
+        object-fit: contain;
+    }
+
+    .amb-sec .enquiry-meet-ctnt {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .counter-inner-line {
+        text-align: center;
+    }
+
+    .hospital-counter {
+        font-size: 28px !important;
+    }
+
+    .book-call-section {
+        padding: 0;
+    }
+
+    .book-new-btn,
+    .book-two-new-btn {
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .hospital-conditions-treat-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hospital-conditions-treat-outer {
+        border-radius: 10px;
+        padding: 30px 0px 30px 15px;
+    }
+
+    .hosp-comprehensive-care .why-choose-img {
+        height: 225px;
+    }
+
+    .hospital-book-section {
+        padding-block: 0;
+    }
+
+    .btn-see-more {
+        padding: 5px 10px;
+    }
+
+    .hosp-amb-section {
+        padding-inline: 0;
+        padding-block: 0;
+    }
+
+    .btn-treat-tab img {
+        transform: rotate(90deg);
+    }
+
+    .bnft-tbl-ttl th:last-child,
+    .bnft-body-td:last-child {
+        padding-right: 15px;
+    }
+
+    .bnft-tbl-ttl th:first-child,
+    .bnft-body-td:first-child {
+        padding-left: 15px;
+    }
+
+    .exp-exc-mobile-img {
+        width: 100%;
+        height: 345px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hospital-counter {
+        font-size: 24px !important;
+    }
+
+    .hospital-why-choose-us-img {
+        width: 100%;
+    }
+
+    .hospital-our-services-card {
+        padding: 10px;
+    }
+
+    .hospital-conditions-treat-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .faq-question,
+    .faq-answer {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
